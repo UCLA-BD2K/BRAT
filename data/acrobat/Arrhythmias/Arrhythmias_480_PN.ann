@@ -1,0 +1,6 @@
+T1	Date 248 260	4 days prior
+E1	Date:T1 
+T2	Date 2171 2185	Two days later
+E2	Date:T2 
+T3	Date 3619 3635	Three days early
+E3	Date:T3 

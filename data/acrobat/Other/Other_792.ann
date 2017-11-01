@@ -1,0 +1,61 @@
+T1	Age 2 13	45-year-old
+T2	Gender 14 20	female
+T3	Sign_symptom 61 65	pain
+E1	Sign_symptom:T3 
+T4	Biological_structure 52 60	low back
+R1	MODIFY Arg1:T4 Arg2:E1	
+T5	Severity 36 48	sudden onset
+R2	MODIFY Arg1:T5 Arg2:E1	
+T6	Activity 70 78	admitted
+E2	Activity:T6 
+T7	Diagnostic_procedure 108 122	blood pressure
+E3	Diagnostic_procedure:T7 
+T8	Lab_value 127 139	160/90 mm Hg
+R3	MODIFY Arg1:T8 Arg2:E3	
+T9	Activity 149 156	arrived
+E4	Activity:T9 
+T10	Nonbiological_location 164 172	hospital
+R4	MODIFY Arg1:T10 Arg2:E4	
+T11	Sign_symptom 190 202	hypertension
+E5	Sign_symptom:T11 
+T12	Activity 224 230	smoked
+E6	Activity:T12 
+A1	POLARITY E6 NEG
+A2	POLARITY E5 NEG
+T13	Diagnostic_procedure 239 242	CTA
+E7	Diagnostic_procedure:T13 
+T14	Detailed_description 232 238	Aortic
+R5	MODIFY Arg1:T14 Arg2:E7	
+T15	Sign_symptom 268 278	aortic IMH
+E8	Sign_symptom:T15 
+#1	AnnotatorNotes E8	intramural haematoma
+T16	Sign_symptom 284 295	aortic BAPs
+E9	Sign_symptom:T16 
+#2	AnnotatorNotes E9	 branch artery pseudoaneurysms
+T17	Sign_symptom 320 330	dissection
+E10	Sign_symptom:T17 
+T18	Biological_structure 300 319	common iliac artery
+R6	MODIFY Arg1:T18 Arg2:E10	
+T19	Qualitative_concept 252 267	Stanford type B
+R7	MODIFY Arg1:T19 Arg2:E8	
+T20	Diagnostic_procedure 351 389	p eriaortic contrast agent collections
+E11	Diagnostic_procedure:T20 
+T21	Sign_symptom 397 400	IMH
+E12	Sign_symptom:T21 
+R8	CO-OCCURANCE Arg1:E12 Arg2:E8	
+T22	Biological_structure 431 444	lumbar artery
+T23	Biological_structure 449 477	accessory renal artery (ARA)
+T24	Sign_symptom 495 513	intimal disruption
+E13	Sign_symptom:T24 
+T25	Biological_structure 521 531	true lumen
+R9	MODIFY Arg1:T25 Arg2:E13	
+T26	Qualitative_concept 539 553	L4 to L5 level
+R10	MODIFY Arg1:T26 Arg2:E13	
+R11	MODIFY Arg1:E12 Arg2:E11	
+T27	Sign_symptom 414 423	connected
+E14	Sign_symptom:T27 
+#3	AnnotatorNotes E14	In this case, the connection is abnormal
+R12	MODIFY Arg1:E14 Arg2:E12	
+R13	MODIFY Arg1:T22 Arg2:E14	
+R14	MODIFY Arg1:T23 Arg2:E14	
+R15	CAUSE Arg1:E12 Arg2:E13	

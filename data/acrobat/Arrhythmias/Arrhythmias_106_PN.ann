@@ -1,0 +1,6 @@
+T1	Duration 257 273	180 milliseconds
+E1	Duration:T1 
+T2	Frequency 3291 3302	twice daily
+E2	Frequency:T2 
+T3	Time 4045 4054	>24 hours
+E3	Time:T3 

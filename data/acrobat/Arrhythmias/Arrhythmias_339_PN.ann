@@ -1,0 +1,4 @@
+T1	Date 1900 1925	two years postoperatively
+E1	Date:T1 
+T2	Duration 1508 1513	3 min
+E2	Duration:T2 

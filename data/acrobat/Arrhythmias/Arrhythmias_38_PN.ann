@@ -1,0 +1,10 @@
+T1	Frequency 1091 1102	twice daily
+E1	Frequency:T1 
+T2	Frequency 1754 1765	twice daily
+E2	Frequency:T2 
+T3	Frequency 1785 1795	once daily
+E3	Frequency:T3 
+T4	Frequency 1811 1822	twice daily
+E4	Frequency:T4 
+T5	Frequency 1843 1853	once daily
+E5	Frequency:T5 

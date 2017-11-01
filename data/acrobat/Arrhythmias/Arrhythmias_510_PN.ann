@@ -1,0 +1,6 @@
+T1	Duration 1691 1704	Within 4 days
+E1	Duration:T1 
+T2	Date 3528 3548	After overall 6 days
+E2	Date:T2 
+T3	Date 3700 3721	after overall 4 weeks
+E3	Date:T3 

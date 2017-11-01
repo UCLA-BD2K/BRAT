@@ -1,0 +1,30 @@
+T1	Date 189 193	1997
+E1	Date:T1 
+T2	Date 198 202	2006
+E2	Date:T2 
+T3	Date 321 325	2006
+E3	Date:T3 
+T4	Date 333 337	2007
+E4	Date:T4 
+T5	Date 564 568	2008
+E5	Date:T5 
+T6	Date 572 576	2011
+E6	Date:T6 
+T7	Date 818 827	June 2012
+E7	Date:T7 
+T8	Date 847 856	June 2012
+E8	Date:T8 
+T9	Date 1041 1055	1-year earlier
+E9	Date:T9 
+T10	Date 1132 1150	September 28, 2012
+E10	Date:T10 
+T11	Duration 1349 1352	6 h
+E11	Duration:T11 
+T12	Duration 2037 2044	15 days
+E12	Duration:T12 
+T13	Date 2133 2139	day 15
+E13	Date:T13 
+T14	Date 2344 2356	October 2012
+E14	Date:T14 
+T15	Date 3026 3040	6 months later
+E15	Date:T15 

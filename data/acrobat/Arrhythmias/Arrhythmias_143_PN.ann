@@ -1,0 +1,6 @@
+T1	Duration 2705 2723	for the next 5 min
+E1	Duration:T1 
+T2	Date 1858 1877	At 60 min following
+E2	Date:T2 
+T3	Date 2205 2225	At 120 min following
+E3	Date:T3 

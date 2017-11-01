@@ -1,0 +1,8 @@
+T7	Duration 4535 4547	1 to 2 weeks
+E7	Duration:T7 
+T5	Duration 3218 3233	months to years
+E5	Duration:T5 
+T3	Duration 3018 3033	weeks to months
+E3	Duration:T3 
+T1	Duration 2865 2891	several days up to a month
+E1	Duration:T1 

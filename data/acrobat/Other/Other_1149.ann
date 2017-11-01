@@ -1,0 +1,139 @@
+T1	History 2 20	previously healthy
+T2	Age 21 31	7-year-old
+T3	Gender 32 35	boy
+T4	Activity 36 45	presented
+E1	Activity:T4 
+T5	Nonbiological_location 49 68	an outside hospital
+T6	Sign_symptom 74 95	altered mental status
+E2	Sign_symptom:T6 
+T7	Sign_symptom 100 108	seizures
+E3	Sign_symptom:T7 
+T8	Sign_symptom 128 139	weight loss
+E4	Sign_symptom:T8 
+T9	Sign_symptom 154 167	blurry vision
+E5	Sign_symptom:T9 
+T10	Detailed_description 141 153	intermittent
+R1	MODIFY Arg1:T10 Arg2:E5	
+T11	Sign_symptom 169 177	polyuria
+E6	Sign_symptom:T11 
+T12	Sign_symptom 183 193	polydipsia
+E7	Sign_symptom:T12 
+T13	Duration 198 205	2 weeks
+E8	Duration:T13 
+T14	Diagnostic_procedure 219 233	blood pressure
+E9	Diagnostic_procedure:T14 
+T15	Lab_value 238 250	220/130 mmHg
+R2	MODIFY Arg1:T15 Arg2:E9	
+T16	Diagnostic_procedure 252 276	Computed tomography scan
+E10	Diagnostic_procedure:T16 
+T17	Biological_structure 284 289	brain
+T18	Sign_symptom 294 300	normal
+E11	Sign_symptom:T18 
+R3	MODIFY Arg1:T17 Arg2:E10	
+R4	MODIFY Arg1:E11 Arg2:E10	
+T19	Sign_symptom 306 314	seizures
+E12	Sign_symptom:T19 
+T20	Medication 336 345	lorazepam
+E13	Medication:T20 
+T21	Detailed_description 320 330	controlled
+R5	MODIFY Arg1:T21 Arg2:E12	
+R6	CAUSE Arg1:E13 Arg2:T21	
+T22	Medication 367 390	calcium channel blocker
+E14	Medication:T22 
+T23	Medication 392 403	nicardipine
+E15	Medication:T23 
+T24	Administration 404 408	drip
+T25	Activity 414 425	transferred
+E16	Activity:T25 
+T26	Nonbiological_location 429 467	Children's Hospital Los Angeles (CHLA)
+T27	Activity 495 502	work-up
+E17	Activity:T27 
+T28	Activity 480 490	management
+E18	Activity:T28 
+T29	Sign_symptom 510 522	hypertension
+E19	Sign_symptom:T29 
+T30	Nonbiological_location 527 531	CHLA
+R7	CO-OCCURANCE Arg1:T30 Arg2:T26	
+T31	Diagnostic_procedure 533 553	physical examination
+E20	Diagnostic_procedure:T31 
+T32	Sign_symptom 574 585	tachycardia
+E21	Sign_symptom:T32 
+T33	Lab_value 587 600	136 beats/min
+T34	Sign_symptom 606 618	hypertension
+E22	Sign_symptom:T34 
+T35	Lab_value 620 632	166/ 96 mmHg
+T36	Sign_symptom 667 698	waxing and waning mental status
+E23	Sign_symptom:T36 
+T37	Biological_structure 718 728	precordium
+T38	Detailed_description 705 717	hyperdynamic
+R8	MODIFY Arg1:T38 Arg2:T37	
+T39	Diagnostic_procedure 772 783	examination
+E24	Diagnostic_procedure:T39 
+T40	Biological_structure 762 771	abdominal
+T41	Biological_structure 746 757	respiratory
+R9	MODIFY Arg1:T40 Arg2:E24	
+R10	MODIFY Arg1:T41 Arg2:E24	
+T42	Sign_symptom 739 745	normal
+E25	Sign_symptom:T42 
+R11	MODIFY Arg1:E25 Arg2:E24	
+T43	Sign_symptom 810 822	virilization
+E26	Sign_symptom:T43 
+A1	POLARITY E26 NEG
+T44	Sign_symptom 795 806	no evidence
+E27	Sign_symptom:T44 
+R12	MODIFY Arg1:E27 Arg2:E26	
+T45	Biological_structure 827 836	abdominal
+T46	Diagnostic_procedure 837 847	ultrasound
+E28	Diagnostic_procedure:T46 
+R13	MODIFY Arg1:T45 Arg2:E28	
+T47	Biological_structure 871 903	superior pole of the left kidney
+T48	Sign_symptom 859 863	mass
+E29	Sign_symptom:T48 
+R14	MODIFY Arg1:T47 Arg2:E29	
+T49	Sign_symptom 923 935	adrenal mass
+E30	Sign_symptom:T49 
+A2	POLARITY E30 MAYBE_POS
+T50	Diagnostic_procedure 937 955	Serum electrolytes
+E31	Diagnostic_procedure:T50 
+T51	Sign_symptom 972 983	hypokalemia
+E32	Sign_symptom:T51 
+T52	Sign_symptom 1000 1013	normal sodium
+E33	Sign_symptom:T52 
+R15	MODIFY Arg1:E32 Arg2:E31	
+R16	MODIFY Arg1:E33 Arg2:E31	
+T53	Lab_value 985 994	2.1 mEq/L
+T54	Lab_value 1015 1024	138 mEq/L
+R17	MODIFY Arg1:T53 Arg2:E32	
+R18	MODIFY Arg1:T54 Arg2:E33	
+T55	Diagnostic_procedure 1027 1030	TSH
+E34	Diagnostic_procedure:T55 
+T56	Diagnostic_procedure 1032 1034	T4
+E35	Diagnostic_procedure:T56 
+T57	Diagnostic_procedure 1040 1055	cortisol levels
+E36	Diagnostic_procedure:T57 
+T58	Sign_symptom 1061 1067	normal
+E37	Sign_symptom:T58 
+R19	MODIFY Arg1:E37 Arg2:E36	
+R20	MODIFY Arg1:E37 Arg2:E35	
+R21	MODIFY Arg1:E37 Arg2:E34	
+T59	Diagnostic_procedure 1104 1118	catecholamines
+E38	Diagnostic_procedure:T59 
+T60	Detailed_description 1096 1103	urinary
+R22	MODIFY Arg1:T60 Arg2:E38	
+T61	Detailed_description 1086 1091	serum
+R23	MODIFY Arg1:T61 Arg2:E38	
+T62	Diagnostic_procedure 1130 1173	renin–angiotensin aldosterone system (RAAS)
+E39	Diagnostic_procedure:T62 
+T63	Sign_symptom 1200 1216	pheochromocytoma
+E40	Sign_symptom:T63 
+A3	POLARITY E40 NEG
+T64	Activity 1312 1329	positioned supine
+E41	Activity:T64 
+R24	MODIFY Arg1:T5 Arg2:E1	
+*	OVERLAP E2 E3
+R25	AFTER Arg1:E3 Arg2:E4	
+*	OVERLAP E4 E5 E6 E7
+R26	MODIFY Arg1:E8 Arg2:E7	
+R27	MODIFY Arg1:E8 Arg2:E6	
+R28	MODIFY Arg1:E8 Arg2:E5	
+R29	MODIFY Arg1:E8 Arg2:E4	

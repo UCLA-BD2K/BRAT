@@ -1,0 +1,128 @@
+T2	Disease_disorder 168 170	MI
+E1	Disease_disorder:T2 
+T3	Qualitative_concept 162 167	acute
+R1	MODIFY Arg1:T3 Arg2:E1	
+T1	Age 24 35	54-year-old
+T4	Gender 36 42	female
+T5	Activity 47 55	admitted
+E2	Activity:T5 
+T6	Disease_disorder 107 109	HF
+E3	Disease_disorder:T6 
+T7	Diagnostic_procedure 184 204	coronary angiography
+E4	Diagnostic_procedure:T7 
+T8	Diagnostic_procedure 356 377	coronary intervention
+E5	Diagnostic_procedure:T8 
+T9	Time 137 156	three years earlier
+E6	Time:T9 
+*	OVERLAP E6 E1
+T10	Anatomical_structure 229 250	right coronary artery
+T11	Anatomical_structure 288 319	left descending coronary artery
+T12	Disease_disorder 408 410	MI
+E7	Disease_disorder:T12 
+T13	Diagnostic_procedure 1387 1426	Cardiovascular magnetic resonance (CMR)
+E8	Diagnostic_procedure:T13 
+T14	Time 379 401	During hospitalisation
+E9	Time:T14 
+T15	Severity 456 531	Class III according to the New York Heart Association (NYHA) classification
+T16	Disease_disorder 212 221	occlusion
+E10	Disease_disorder:T16 
+T17	Severity 206 211	total
+R2	MODIFY Arg1:T17 Arg2:E10	
+T18	Activity 342 351	undergone
+E11	Activity:T18 
+T19	Disease_disorder 976 979	CAD
+E12	Disease_disorder:T19 
+T20	Disease_disorder 996 1017	arterial hypertension
+E13	Disease_disorder:T20 
+T21	Disease_disorder 1019 1040	hypercholesterolaemia
+E14	Disease_disorder:T21 
+T22	Disease_disorder 1042 1064	ventricular arrhythmia
+E15	Disease_disorder:T22 
+T23	Medication 1066 1076	carvedilol
+E16	Medication:T23 
+T24	Medication 1078 1086	ramipril
+E17	Medication:T24 
+T25	Medication 1088 1102	spironolactone
+E18	Medication:T25 
+T26	Medication 1104 1114	furosemide
+E19	Medication:T26 
+T27	Medication 1116 1128	atorvastatin
+E20	Medication:T27 
+T28	Medication 1130 1143	trimetazidine
+E21	Medication:T28 
+T29	Medication 1145 1152	aspirin
+E22	Medication:T29 
+T30	Time 1155 1171	Two months later
+E23	Time:T30 
+T31	Activity 1184 1193	admission
+E24	Activity:T31 
+T32	Lab_value 1255 1275	NT-proBNP 1869 pg/mL
+T33	Lab_value 583 646	Nterminal-pro-brain natriuretic peptide (NT-proBNP, 10581 pg/mL
+T34	Lab 565 573	elevated
+E25	Lab:T34 
+A1	TREND E25 INC
+T35	Disease_disorder 1625 1634	infection
+E26	Disease_disorder:T35 
+T36	Disease_disorder 1638 1643	fever
+E27	Disease_disorder:T36 
+T37	Lab 1604 1606	no
+E28	Lab:T37 
+A2	POLARITY E28 NEG
+T38	Diagnostic_procedure 1853 1869	Echocardiography
+E29	Diagnostic_procedure:T38 
+T39	Diagnostic_procedure 2069 2096	endomyocardial biopsy (EMB)
+E30	Diagnostic_procedure:T39 
+T40	Diagnostic_procedure 2111 2114	EMB
+E31	Diagnostic_procedure:T40 
+T41	Disease_disorder 2564 2566	HF
+E32	Disease_disorder:T41 
+T42	Disease_disorder 2571 2574	CAD
+E33	Disease_disorder:T42 
+T43	Time 2679 2695	hree months late
+E34	Time:T43 
+T44	Activity 2713 2727	rehospitalised
+E35	Activity:T44 
+T45	Disease_disorder 2739 2741	HF
+E36	Disease_disorder:T45 
+T46	Severity 2742 2754	exacerbation
+R3	MODIFY Arg1:E36 Arg2:T46	
+T47	Lab_value 2772 2792	NT-proBNP 1980 pg/dL
+T48	Lab_value 2794 2810	troponin 3 ng/mL
+T49	Diagnostic_procedure 2891 2920	24-hour Holter ECG monitoring
+E37	Diagnostic_procedure:T49 
+T50	Lab_value 2812 2823	LVEDD 77 mm
+T51	Lab_value 2825 2833	LVEF 30%
+T52	Diagnostic_procedure 2330 2349	Electron microscopy
+E38	Diagnostic_procedure:T52 
+T53	Diagnostic_procedure 2938 2958	coronary angiography
+E39	Diagnostic_procedure:T53 
+T54	Lab 3084 3138	real-time polymerase chain reaction examination (qPCR)
+E40	Lab:T54 
+T55	Disease_disorder 3313 3333	viral cardiomyopathy
+E41	Disease_disorder:T55 
+T56	Medication 3394 3406	interferon-β
+E42	Medication:T56 
+T57	Dosage 3457 3474	62.5 μg (0.25 mL)
+T58	Dosage 3494 3508	125 μg (0.5 mL
+T59	Dosage 3545 3563	187.5 μg (0.75 mL)
+T60	Administration 3564 3578	subcutaneously
+T61	Time 3647 3659	fourth month
+E43	Time:T61 
+T62	Diagnostic_procedure 3678 3681	EMB
+E44	Diagnostic_procedure:T62 
+T63	Time 3759 3769	six months
+E45	Time:T63 
+T64	Medication 3788 3800	interferon-β
+E46	Medication:T64 
+T65	Severity 1240 1254	NYHA class II,
+T67	Lab_value 1290 1298	LVEF 35%
+T66	Lab_value 1277 1288	LVEDD 73 mm
+T68	Disease_disorder 2019 2030	myocarditis
+E47	Disease_disorder:T68 
+T69	Time 4053 4061	two-year
+E48	Time:T69 
+T70	Activity 4062 4071	follow-up
+E49	Activity:T70 
+T71	Qualitative_concept 4076 4086	uneventful
+R4	MODIFY Arg1:E49 Arg2:T71	
+R5	MODIFY Arg1:E48 Arg2:E49	

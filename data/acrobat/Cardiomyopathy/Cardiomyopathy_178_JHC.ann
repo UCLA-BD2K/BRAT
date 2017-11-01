@@ -1,0 +1,357 @@
+T1	Age 25 36	54-year-old
+T2	Gender 37 43	female
+T3	Activity 48 56	admitted
+E1	Activity:T3 
+T4	Location 64 72	hospital
+#1	AnnotatorNotes T4	Location
+T5	Disease_disorder 108 110	HF
+E2	Disease_disorder:T5 
+#2	AnnotatorNotes E2	Heart failure
+T6	Date 138 157	three years earlier
+E3	Date:T6 
+T7	Disease_disorder 169 171	MI
+E4	Disease_disorder:T7 
+#3	AnnotatorNotes E4	myocardial infarction
+T8	Detail_Description 163 168	acute
+R1	MODIFIER Arg1:T8 Arg2:E4	
+T9	Diagnostic_procedure 185 205	coronary angiography
+E5	Diagnostic_procedure:T9 
+T10	Sign_symptom 213 251	occlusion of the right coronary artery
+E6	Sign_symptom:T10 
+T11	Sign_symptom 257 320	collateral circulation from the left descending coronary artery
+E7	Sign_symptom:T11 
+T12	Therapeutic_procedure 357 378	coronary intervention
+E8	Therapeutic_procedure:T12 
+A1	POLARITY E8 NEG
+T13	Activity 387 402	hospitalisation
+E9	Activity:T13 
+T14	Disease_disorder 409 411	MI
+E10	Disease_disorder:T14 
+T16	Lab 584 623	Nterminal-pro-brain natriuretic peptide
+E12	Lab:T16 
+T17	Qualitative_concept 566 574	elevated
+R2	MODIFIER Arg1:T17 Arg2:E12	
+T18	Lab_value 636 647	10581 pg/mL
+R3	MODIFIER Arg1:T18 Arg2:E12	
+T19	Sign_symptom 650 669	cardiac enlargement
+E13	Sign_symptom:T19 
+T20	Activity 542 553	examination
+E14	Activity:T20 
+T21	Lab 688 727	left ventricular end-diastolic diameter
+E15	Lab:T21 
+T22	Lab_value 736 741	81 mm
+R4	MODIFIER Arg1:T22 Arg2:E15	
+T23	Qualitative_concept 678 687	increased
+R5	MODIFIER Arg1:T23 Arg2:E15	
+T24	Lab 748 782	left ventricular ejection fraction
+E16	Lab:T24 
+T25	Severity 744 747	low
+R6	MODIFIER Arg1:T25 Arg2:E16	
+T26	Lab_value 790 793	25%
+R7	MODIFIER Arg1:T26 Arg2:E16	
+T27	Sign_symptom 800 808	akinesis
+E17	Sign_symptom:T27 
+T28	Anatomical_structure 843 862	inferolateral walls
+R8	MODIFIER Arg1:T28 Arg2:E17	
+T29	Anatomical_structure 816 824	inferior
+T30	Anatomical_structure 826 838	inferoseptal
+R9	MODIFIER Arg1:T29 Arg2:E17	
+R10	MODIFIER Arg1:T30 Arg2:E17	
+T31	Sign_symptom 882 893	hypokinesis
+E18	Sign_symptom:T31 
+T32	Anatomical_structure 897 930	other walls of the left ventricle
+T33	Severity 868 874	severe
+T34	Qualitative_concept 875 881	global
+R11	MODIFIER Arg1:T34 Arg2:E18	
+R12	MODIFIER Arg1:T33 Arg2:E18	
+R13	MODIFIER Arg1:T32 Arg2:E18	
+T35	Disease_disorder 977 980	CAD
+E19	Disease_disorder:T35 
+#4	AnnotatorNotes E19	coronary artery disease
+T36	Disease_disorder 997 1018	arterial hypertension
+E20	Disease_disorder:T36 
+T37	Disease_disorder 1020 1041	hypercholesterolaemia
+E21	Disease_disorder:T37 
+T38	Disease_disorder 1043 1065	ventricular arrhythmia
+E22	Disease_disorder:T38 
+T39	Medication 1067 1077	carvedilol
+E23	Medication:T39 
+T40	Medication 1079 1087	ramipril
+E24	Medication:T40 
+T41	Medication 1089 1103	spironolactone
+E25	Medication:T41 
+T42	Medication 1105 1115	furosemide
+E26	Medication:T42 
+T43	Medication 1117 1129	atorvastatin
+E27	Medication:T43 
+T44	Medication 1131 1144	trimetazidine
+E28	Medication:T44 
+T45	Medication 1146 1153	aspirin
+E29	Medication:T45 
+T46	Date 1156 1172	Two months later
+E30	Date:T46 
+T47	Activity 1185 1194	admission
+E31	Activity:T47 
+T48	Lab 1241 1245	NYHA
+E32	Lab:T48 
+T15	Lab_value 457 466	Class III
+T49	Lab 484 532	New York Heart Association (NYHA) classification
+E11	Lab:T49 
+R14	MODIFIER Arg1:T15 Arg2:E11	
+T50	Lab 1256 1265	NT-proBNP
+E33	Lab:T50 
+T51	Lab 1278 1283	LVEDD
+E34	Lab:T51 
+T52	Lab 1291 1295	LVEF
+E35	Lab:T52 
+T53	Lab_value 1266 1276	1869 pg/mL
+R15	MODIFIER Arg1:T53 Arg2:E33	
+T54	Lab_value 1284 1289	73 mm
+R16	MODIFIER Arg1:T54 Arg2:E34	
+T55	Lab_value 1296 1299	35%
+R17	MODIFIER Arg1:T55 Arg2:E35	
+T56	Sign_symptom 1337 1345	akinesis
+E36	Sign_symptom:T56 
+T57	Sign_symptom 1359 1370	hypokinesis
+E37	Sign_symptom:T57 
+T58	Qualitative_concept 1350 1358	moderate
+R18	MODIFIER Arg1:T58 Arg2:E37	
+T59	Anatomical_structure 1374 1385	other walls
+R19	MODIFIER Arg1:T59 Arg2:E37	
+T60	Anatomical_structure 1305 1336	inferior and inferolateral wall
+R20	MODIFIER Arg1:T60 Arg2:E36	
+T61	Diagnostic_procedure 1388 1421	Cardiovascular magnetic resonance
+E38	Diagnostic_procedure:T61 
+T62	Lab 1463 1490	late gadolinium enhancement
+E39	Lab:T62 
+T63	Anatomical_structure 1504 1527	inferoseptal (mid-wall)
+T64	Anatomical_structure 1529 1555	inferior (sub-endocardial)
+T65	Anatomical_structure 1560 1586	inferolateral (transmural)
+R21	MODIFIER Arg1:T63 Arg2:E39	
+R22	MODIFIER Arg1:T64 Arg2:E39	
+R23	MODIFIER Arg1:T65 Arg2:E39	
+T66	History 1605 1635	no history of recent infection
+#5	AnnotatorNotes T66	history
+T68	Sign_symptom 1662 1675	LV dilatation
+E40	Sign_symptom:T68 
+T69	Lab 1705 1708	LGE
+E41	Lab:T69 
+T70	Qualitative_concept 1679 1701	characteristic pattern
+R24	MODIFIER Arg1:T70 Arg2:E41	
+T71	Disease_disorder 1713 1724	myocarditis
+E42	Disease_disorder:T71 
+T72	Anatomical_structure 1732 1744	inferoseptal
+T73	Anatomical_structure 1749 1763	inferior walls
+R25	MODIFIER Arg1:T72 Arg2:E42	
+R26	MODIFIER Arg1:T73 Arg2:E42	
+T74	Lab 1828 1838	troponin I
+E43	Lab:T74 
+T75	Quantitative_concept 1840 1851	0.014 ng/mL
+R27	MODIFIER Arg1:T75 Arg2:E43	
+T76	Qualitative_concept 1793 1824	slightly elevated concentration
+R28	MODIFIER Arg1:T76 Arg2:E43	
+T77	Diagnostic_procedure 1854 1870	Echocardiography
+E44	Diagnostic_procedure:T77 
+T78	Sign_symptom 1910 1933	coronary artery changes
+E45	Sign_symptom:T78 
+T79	Sign_symptom 1938 1959	cardiac contractility
+E46	Sign_symptom:T79 
+T80	Qualitative_concept 1882 1897	low correlation
+R29	MODIFIER Arg1:T80 Arg2:E45	
+R30	MODIFIER Arg1:T80 Arg2:E46	
+T81	Disease_disorder 2020 2031	myocarditis
+E47	Disease_disorder:T81 
+T82	Diagnostic_procedure 2070 2091	endomyocardial biopsy
+E48	Diagnostic_procedure:T82 
+T83	Diagnostic_procedure 2112 2115	EMB
+E49	Diagnostic_procedure:T83 
+T84	Sign_symptom 2120 2145	not confirm the suspicion
+E50	Sign_symptom:T84 
+A2	POLARITY E50 NEG
+T85	Lab 2166 2172	Dallas
+E51	Lab:T85 
+T86	Lab 2233 2261	immunohistochemical criteria
+E52	Lab:T86 
+T87	Lab 2331 2365	Electron microscopy of EMB samples
+E53	Lab:T87 
+T88	Sign_symptom 2375 2434	ultrastructural changes in all elements of the heart tissue
+E54	Sign_symptom:T88 
+T89	Sign_symptom 2541 2562	no virus was detected
+E55	Sign_symptom:T89 
+A3	POLARITY E55 NEG
+T90	Therapeutic_procedure 2565 2585	HF and CAD treatment
+E56	Therapeutic_procedure:T90 
+T91	Qualitative_concept 2603 2668	according to the guidelines of the European Society of Cardiology
+R31	MODIFIER Arg1:T91 Arg2:E56	
+T92	Anatomical_structure 2436 2446	myofibrils
+T93	Anatomical_structure 2448 2455	nucleus
+T94	Anatomical_structure 2457 2470	mitochondrion
+T95	Anatomical_structure 2472 2493	endoplasmic reticulum
+T96	Anatomical_structure 2495 2519	intercellular connection
+T97	Anatomical_structure 2521 2534	blood vessels
+R32	MODIFIER Arg1:T92 Arg2:E54	
+R33	MODIFIER Arg1:T93 Arg2:E54	
+R34	MODIFIER Arg1:T94 Arg2:E54	
+R35	MODIFIER Arg1:T95 Arg2:E54	
+R36	MODIFIER Arg1:T96 Arg2:E54	
+R37	MODIFIER Arg1:T97 Arg2:E54	
+T98	Date 2679 2697	three months later
+E57	Date:T98 
+T99	Activity 2714 2728	rehospitalised
+E58	Activity:T99 
+T100	Disease_disorder 2740 2755	HF exacerbation
+E59	Disease_disorder:T100 
+T101	Lab_value 1246 1254	class II
+R38	MODIFIER Arg1:T101 Arg2:E32	
+T102	Lab 2757 2761	NYHA
+E60	Lab:T102 
+T103	Lab_value 2762 2771	Class III
+R39	MODIFIER Arg1:T103 Arg2:E60	
+T104	Lab 2773 2782	NT-proBNP
+E61	Lab:T104 
+T105	Lab_value 2783 2793	1980 pg/dL
+T106	Lab 2795 2803	troponin
+E62	Lab:T106 
+T107	Quantitative_concept 2804 2811	3 ng/mL
+T108	Lab 2813 2818	LVEDD
+E63	Lab:T108 
+T109	Quantitative_concept 2819 2824	77 mm
+T110	Lab 2826 2830	LVEF
+E64	Lab:T110 
+T111	Quantitative_concept 2831 2834	30%
+T112	Quantitative_concept 2836 2840	8048
+T113	Sign_symptom 2841 2866	ventricular extrasystoles
+E65	Sign_symptom:T113 
+T114	Quantitative_concept 2867 2888	without complex forms
+R40	MODIFIER Arg1:T114 Arg2:E65	
+T115	Diagnostic_procedure 2900 2921	Holter ECG monitoring
+E66	Diagnostic_procedure:T115 
+T116	Duration 2892 2899	24-hour
+E67	Duration:T116 
+R41	MODIFIER Arg1:E67 Arg2:E66	
+R42	MODIFIER Arg1:T112 Arg2:E65	
+T117	Diagnostic_procedure 2939 2959	coronary angiography
+E68	Diagnostic_procedure:T117 
+T118	Result_outcome 2960 3012	resembled these observed in the previous examination
+R43	MODIFIER Arg1:T118 Arg2:E68	
+T119	Lab 3085 3132	real-time polymerase chain reaction examination
+E69	Lab:T119 
+T120	Qualitative_concept 3154 3232	to detect viral nucleic acids in the samples collected during the previous EMB
+R44	MODIFIER Arg1:T120 Arg2:E69	
+T121	Lab 3271 3275	qPCR
+E70	Lab:T121 
+T122	Lab_value 3289 3308	presence of HEV RNA
+R45	MODIFIER Arg1:T122 Arg2:E70	
+T123	Disease_disorder 3314 3334	viral cardiomyopathy
+E71	Disease_disorder:T123 
+T124	Medication 3395 3407	interferon-β
+E72	Medication:T124 
+T125	Dosage 3458 3475	62.5 μg (0.25 mL)
+T126	Quantitative_concept 3467 3474	0.25 mL
+T127	Duration 3476 3493	in the first week
+E73	Duration:T127 
+T128	Dosage 3495 3510	125 μg (0.5 mL)
+T129	Quantitative_concept 3503 3509	0.5 mL
+T130	Duration 3511 3540	in the second and third weeks
+E74	Duration:T130 
+T131	Dosage 3546 3564	187.5 μg (0.75 mL)
+T132	Quantitative_concept 3556 3563	0.75 mL
+T133	Administration 3565 3579	subcutaneously
+T134	Frequency 3580 3595	every other day
+E75	Frequency:T134 
+T135	Duration 3596 3637	from the fourth to the twenty-fourth week
+E76	Duration:T135 
+T136	Duration 3641 3677	In the fourth month of the treatment
+E77	Duration:T136 
+T137	Diagnostic_procedure 3679 3682	EMB
+E78	Diagnostic_procedure:T137 
+T138	Result_outcome 3701 3724	no HEV RNA was detected
+R46	MODIFIER Arg1:T138 Arg2:E78	
+T139	Date 3754 3783	After six months of treatment
+E79	Date:T139 
+T140	Medication 3789 3801	interferon-β
+E80	Medication:T140 
+T141	Lab 3843 3847	NYHA
+E81	Lab:T141 
+T142	Lab_value 3848 3855	class I
+T143	Lab 3857 3866	NT-proBNP
+E82	Lab:T143 
+T144	Lab_value 3867 3876	512 pg/mL
+T145	Lab 3878 3883	LVEDD
+E83	Lab:T145 
+T146	Lab_value 3884 3889	68 mm
+T147	Lab 3891 3895	LVEF
+E84	Lab:T147 
+T148	Lab_value 3896 3899	45%
+T149	Sign_symptom 3929 3932	ExV
+E85	Sign_symptom:T149 
+#7	AnnotatorNotes E85	ventricular extrasystoles
+T150	Diagnostic_procedure 3944 3960	Holter recording
+E86	Diagnostic_procedure:T150 
+T151	Duration 3936 3943	24-hour
+E87	Duration:T151 
+T152	Quantitative_concept 3980 3988	1889 ExV
+T153	Qualitative_concept 3990 4011	without complex forms
+T154	Sign_symptom 4014 4039	No adverse drug reactions
+E88	Sign_symptom:T154 
+A4	POLARITY E88 NEG
+T155	Date 4054 4062	two-year
+E89	Date:T155 
+T156	Activity 4063 4072	follow-up
+E90	Activity:T156 
+T157	Qualitative_concept 4077 4087	uneventful
+R47	MODIFIER Arg1:T157 Arg2:E90	
+R48	MODIFIER Arg1:E89 Arg2:E90	
+R49	MODIFIER Arg1:T142 Arg2:E81	
+R50	MODIFIER Arg1:T144 Arg2:E82	
+R51	MODIFIER Arg1:T146 Arg2:E83	
+R52	MODIFIER Arg1:T148 Arg2:E84	
+*	OVERLAP E1 E2
+R53	AFTER Arg1:E2 Arg2:E4	
+*	OVERLAP E4 E5 E6 E7 E8 E9 E10 E11 E14 E12 E13 E15 E16 E17 E18
+T158	Therapeutic_procedure 965 972	treated
+E91	Therapeutic_procedure:T158 
+R54	BEFORE Arg1:E18 Arg2:E91	
+*	OVERLAP E91 E19 E20 E21 E22 E23 E24 E25 E26 E27 E28 E29
+R55	BEFORE Arg1:E29 Arg2:E31	
+R56	MODIFIER Arg1:E30 Arg2:E31	
+*	OVERLAP E31 E32 E33 E34 E35 E36 E37 E38 E39 E40 E41 E42 E43 E44 E45 E46 E47 E48 E49 E50 E51 E52 E53 E54 E55 E56
+A5	POLARITY E47 MAYBE_POS
+R57	BEFORE Arg1:E56 Arg2:E58	
+R58	MODIFIER Arg1:E57 Arg2:E58	
+*	OVERLAP E58 E59 E60 E61 E62 E63 E64 E65 E66 E68 E69 E70 E71 E72
+R59	MODIFIER Arg1:T125 Arg2:E72	
+R60	MODIFIER Arg1:T126 Arg2:E72	
+R61	MODIFIER Arg1:E73 Arg2:T125	
+R62	MODIFIER Arg1:T128 Arg2:E72	
+R63	MODIFIER Arg1:T129 Arg2:E72	
+R64	MODIFIER Arg1:E74 Arg2:T128	
+R65	MODIFIER Arg1:T131 Arg2:E72	
+R66	MODIFIER Arg1:T132 Arg2:E72	
+R67	MODIFIER Arg1:T133 Arg2:T131	
+R68	MODIFIER Arg1:E75 Arg2:T131	
+R69	BEFORE Arg1:E72 Arg2:E78	
+R70	MODIFIER Arg1:E77 Arg2:E78	
+R71	MODIFIER Arg1:E76 Arg2:T131	
+R72	BEFORE Arg1:E78 Arg2:E80	
+R73	MODIFIER Arg1:E79 Arg2:E80	
+*	OVERLAP E80 E81 E82 E83 E84 E85 E86 E88
+R74	MODIFIER Arg1:E87 Arg2:E86	
+R75	MODIFIER Arg1:T152 Arg2:E85	
+R76	MODIFIER Arg1:T153 Arg2:E85	
+R77	BEFORE Arg1:E88 Arg2:E90	
+R78	MODIFY Arg1:T4 Arg2:E1	
+T67	Sign_symptom 1639 1644	fever
+E92	Sign_symptom:T67 
+A6	POLARITY E92 NEG
+T159	Anatomical_structure 230 251	right coronary artery
+T160	Anatomical_structure 289 320	left descending coronary artery
+T161	Severity 207 212	total
+R79	MODIFY Arg1:T161 Arg2:E6	
+T162	Anatomical_structure 1587 1592	walls
+R80	MODIFY Arg1:T105 Arg2:E61	
+R81	MODIFY Arg1:T107 Arg2:E62	
+R82	MODIFY Arg1:T109 Arg2:E63	
+R83	MODIFY Arg1:T111 Arg2:E64	
+T163	Location 1202 1210	hospital
+R84	MODIFY Arg1:T163 Arg2:E31	

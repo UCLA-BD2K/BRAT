@@ -1,0 +1,10 @@
+T1	Date 3270 3280	second day
+E1	Date:T1 
+T2	Duration 207 214	two-day
+E2	Duration:T2 
+T3	Duration 2360 2369	Overnight
+E3	Duration:T3 
+T4	Date 3122 3139	following morning
+E4	Date:T4 
+T5	Time 3468 3478	150-minute
+E5	Time:T5 

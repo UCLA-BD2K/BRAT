@@ -1,0 +1,12 @@
+T1	Duration 1156 1162	1-week
+E1	Duration:T1 
+T2	Date 1236 1257	Three weeks afterward
+E2	Date:T2 
+T3	Date 1625 1641	A few days later
+E3	Date:T3 
+T4	Date 4552 4563	1 day after
+E4	Date:T4 
+T5	Duration 3287 3294	24-hour
+E5	Duration:T5 
+T6	Duration 4396 4407	a few hours
+E6	Duration:T6 

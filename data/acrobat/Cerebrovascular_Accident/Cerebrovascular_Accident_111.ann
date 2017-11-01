@@ -1,0 +1,6 @@
+T1	Activity 18 27	presented
+E1	Activity:T1 
+T2	Activity 2606 2616	discharged
+E2	Activity:T2 
+T3	Nonbiological_location 85 95	department
+T4	Nonbiological_location 2685 2693	hospital

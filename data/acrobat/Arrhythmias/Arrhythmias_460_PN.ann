@@ -1,0 +1,6 @@
+T1	Date 306 319	past 3 months
+E1	Date:T1 
+T2	Frequency 2010 2015	daily
+E2	Frequency:T2 
+T3	Date 5652 5670	18-month follow-up
+E3	Date:T3 

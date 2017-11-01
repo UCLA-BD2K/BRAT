@@ -1,0 +1,6 @@
+T1	Date 108 120	24 h earlier
+E1	Date:T1 
+T2	Date 122 142	One month previously
+E2	Date:T2 
+T3	Time 701 718	After a few hours
+E3	Time:T3 

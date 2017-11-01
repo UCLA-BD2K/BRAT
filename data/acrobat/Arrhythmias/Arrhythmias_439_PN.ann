@@ -1,0 +1,24 @@
+T1	Date 847 862	10 months after
+E1	Date:T1 
+T2	Duration 1129 1141	for 10 years
+E2	Duration:T2 
+T3	Date 2363 2379	Two months later
+E3	Date:T3 
+T4	Date 2508 2525	After four months
+E4	Date:T4 
+T5	Date 2990 3005	two weeks after
+E5	Date:T5 
+T6	Date 3099 3114	One month after
+E6	Date:T6 
+T7	Date 3538 3553	Two weeks after
+E7	Date:T7 
+T8	Date 3665 3680	After six weeks
+E8	Date:T8 
+T9	Frequency 4186 4196	once daily
+E9	Frequency:T9 
+T10	Date 4394 4409	two weeks after
+E10	Date:T10 
+T11	Date 4589 4599	four weeks
+E11	Date:T11 
+T12	Date 4670 4686	two months after
+E12	Date:T12 

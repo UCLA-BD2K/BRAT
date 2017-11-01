@@ -1,0 +1,12 @@
+T1	Date 194 210	12 months of age
+E1	Date:T1 
+T2	Date 218 225	8 years
+E2	Date:T2 
+T3	Date 389 391	11
+E3	Date:T3 
+T4	Date 396 404	12 years
+E4	Date:T4 
+T5	Date 896 904	13 years
+E5	Date:T5 
+T6	Date 1116 1124	15 years
+E6	Date:T6 

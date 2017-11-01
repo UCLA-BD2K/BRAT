@@ -1,0 +1,7 @@
+T1	Age 21 32	78-year-old
+T2	Ethnicity 33 41	Japanese
+T3	Gender 42 47	woman
+T4	History 2 20	previously healthy
+T5	Duration 54 61	2-month
+E1	Duration:T5 
+T6	History 62 133	history of a papulonodular eruption on the legs with pain in the calves

@@ -1,0 +1,109 @@
+T1	Age 24 35	54-year-old
+T2	Gender 36 42	female
+T3	Activity 47 55	admitted
+E1	Activity:T3 
+T4	Disease_disorder 107 109	HF
+E2	Disease_disorder:T4 
+T5	Disease_disorder 168 170	MI
+E3	Disease_disorder:T5 
+T6	Qualitative_concept 162 167	acute
+R1	MODIFY Arg1:T6 Arg2:E3	
+T7	Diagnostic_procedure 184 204	coronary angiography
+E4	Diagnostic_procedure:T7 
+T8	Activity 80 103	diagnosis and treatment
+E5	Activity:T8 
+T9	Sign_symptom 206 250	total occlusion of the right coronary artery
+E6	Sign_symptom:T9 
+T10	Disease_disorder 256 278	collateral circulation
+E7	Disease_disorder:T10 
+T11	Anatomical_structure 288 320	left descending coronary artery)
+T12	Therapeutic_procedure 356 378	coronary intervention.
+E8	Therapeutic_procedure:T12 
+R2	MODIFY Arg1:E6 Arg2:E3	
+T13	Anatomical_structure 229 250	right coronary artery
+T14	Subject 326 333	patient
+A1	POLARITY E8 NEG
+T15	Disease_disorder 408 410	MI
+E9	Disease_disorder:T15 
+T16	Activity 415 424	diagnosed
+E10	Activity:T16 
+T17	Subject 430 437	patient
+T18	Activity 442 452	classified
+E11	Activity:T18 
+T19	Sign_symptom 456 531	Class III according to the New York Heart Association (NYHA) classification
+E12	Sign_symptom:T19 
+T20	Activity 533 552	Further examination
+E13	Activity:T20 
+T22	Sign_symptom 649 668	cardiac enlargement
+E14	Sign_symptom:T22 
+T21	Sign_symptom 565 647	elevated level of Nterminal-pro-brain natriuretic peptide (NT-proBNP, 10581 pg/mL)
+E15	Sign_symptom:T21 
+T23	Quantitative_concept 565 579	elevated level
+T24	Lab_value 624 633	NT-proBNP
+T25	Lab_value 583 622	Nterminal-pro-brain natriuretic peptide
+T26	Quantitative_concept 636 646	0581 pg/mL
+T27	Sign_symptom 678 742	ncreased left ventricular end-diastolic diameter (LVEDD, 81 mm),
+E16	Sign_symptom:T27 
+T28	Lab_value 728 733	LVEDD
+T29	Quantitative_concept 735 740	81 mm
+T30	Sign_symptom 743 792	low left ventricular ejection fraction (LVEF, 25%
+E17	Sign_symptom:T30 
+T31	Lab_value 783 788	LVEF,
+T32	Quantitative_concept 789 793	25%)
+T33	Sign_symptom 799 807	akinesis
+E18	Sign_symptom:T33 
+T34	Anatomical_structure 815 861	inferior, inferoseptal and inferolateral walls
+T35	Sign_symptom 867 892	severe global hypokinesis
+E19	Sign_symptom:T35 
+T36	Quantitative_concept 867 873	severe
+T37	Anatomical_structure 902 929	walls of the left ventricle
+T38	Subject 947 954	patient
+T39	Activity 964 971	treated
+E20	Activity:T39 
+T40	Disease_disorder 976 979	CAD
+E21	Disease_disorder:T40 
+T41	Disease_disorder 996 1017	arterial hypertension
+E22	Disease_disorder:T41 
+T42	Disease_disorder 1019 1040	hypercholesterolaemia
+E23	Disease_disorder:T42 
+T43	Disease_disorder 1042 1064	ventricular arrhythmia
+E24	Disease_disorder:T43 
+T44	Medication 1066 1076	carvedilol
+E25	Medication:T44 
+T45	Age 1078 1086	ramipril
+T46	Medication 1088 1102	spironolactone
+E26	Medication:T46 
+T47	Age 1104 1114	furosemide
+T48	Medication 1116 1128	atorvastatin
+E27	Medication:T48 
+T49	Medication 1130 1143	trimetazidine
+E28	Medication:T49 
+T50	Medication 1145 1152	aspirin
+E29	Medication:T50 
+T51	Time 1155 1171	Two months later
+E30	Time:T51 
+T52	Activity 1184 1193	admission
+E31	Activity:T52 
+T53	Sign_symptom 1240 1253	NYHA class II
+E32	Sign_symptom:T53 
+T54	Lab 1255 1275	NT-proBNP 1869 pg/mL
+E33	Lab:T54 
+T55	Lab 1277 1288	LVEDD 73 mm
+E34	Lab:T55 
+T56	Lab 1290 1298	LVEF 35%
+E35	Lab:T56 
+T57	Lab 1305 1344	nferior and inferolateral wall akinesis
+E36	Lab:T57 
+T58	Lab 1349 1369	moderate hypokinesis
+E37	Lab:T58 
+T59	Quantitative_concept 1265 1275	1869 pg/mL
+T60	Quantitative_concept 1283 1289	73 mm,
+T61	Quantitative_concept 1295 1298	35%
+T62	Lab_value 1304 1335	inferior and inferolateral wall
+T63	Diagnostic_procedure 1387 1426	Cardiovascular magnetic resonance (CMR)
+E38	Diagnostic_procedure:T63 
+T64	Sign_symptom 1462 1495	late gadolinium enhancement (LGE)
+E39	Sign_symptom:T64 
+T65	Anatomical_structure 1503 1526	inferoseptal (mid-wall)
+T66	Anatomical_structure 1538 1553	sub-endocardial
+T67	Anatomical_structure 1559 1593	inferolateral (transmural) walls .

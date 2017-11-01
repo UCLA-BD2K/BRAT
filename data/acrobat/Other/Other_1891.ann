@@ -1,0 +1,146 @@
+T1	Age 2 13	64-year-old
+T2	History 14 26	asymptomatic
+T3	Gender 27 32	woman
+T4	Disease_disorder 38 51	breast cancer
+E1	Disease_disorder:T4 
+T5	Activity 56 64	referred
+E2	Activity:T5 
+T6	Location 72 83	institution
+T7	History 93 116	no past medical history
+T8	Lab 130 140	heart rate
+E3	Lab:T8 
+T9	Lab_value 145 151	95 bpm
+R1	MODIFY Arg1:T9 Arg2:E3	
+T10	Lab 161 175	blood pressure
+E4	Lab:T10 
+T11	Lab_value 180 190	90/60 mmHg
+R2	MODIFY Arg1:T11 Arg2:E4	
+T12	Diagnostic_procedure 195 212	electrocardiogram
+E5	Diagnostic_procedure:T12 
+T13	Diagnostic_procedure 214 225	chest X-ray
+E6	Diagnostic_procedure:T13 
+T14	Lab 231 247	laboratory tests
+E7	Lab:T14 
+T15	Result_outcome 257 277	no abnormal findings
+R3	MODIFY Arg1:T15 Arg2:E7	
+R4	MODIFY Arg1:T15 Arg2:E6	
+R5	MODIFY Arg1:T15 Arg2:E5	
+T16	Diagnostic_procedure 294 313	computed tomography
+E8	Diagnostic_procedure:T16 
+T17	Detail_Description 279 293	Chest contrast
+R6	MODIFY Arg1:T17 Arg2:E8	
+T18	Disease_disorder 329 339	metastasis
+E9	Disease_disorder:T18 
+T19	Sign_symptom 362 368	a mass
+E10	Sign_symptom:T19 
+A1	POLARITY E9 UNCERTAIN
+T20	Result_outcome 362 403	a mass occupying most of the right atrium
+R7	MODIFY Arg1:T20 Arg2:E8	
+R8	MODIFY Arg1:E9 Arg2:E8	
+T21	Anatomical_structure 391 403	right atrium
+R9	MODIFY Arg1:T21 Arg2:E10	
+T22	Diagnostic_procedure 418 420	CT
+E11	Diagnostic_procedure:T22 
+T23	Detail_Description 406 417	Axial plane
+R10	MODIFY Arg1:T23 Arg2:E11	
+T24	Sign_symptom 447 460	calcification
+E12	Sign_symptom:T24 
+T25	Sign_symptom 465 473	bleeding
+E13	Sign_symptom:T25 
+A2	POLARITY E12 MAYBE_POS
+A3	POLARITY E13 MAYBE_POS
+T26	Result_outcome 447 473	calcification and bleeding
+R11	MODIFY Arg1:T26 Arg2:E11	
+T27	Sign_symptom 497 503	myxoma
+E14	Sign_symptom:T27 
+T28	Severity 491 496	large
+R12	MODIFY Arg1:T28 Arg2:E14	
+T29	Sign_symptom 516 520	mass
+E15	Sign_symptom:T29 
+T30	Detail_Description 525 534	spherical
+T31	Detail_Description 539 553	welldemarcated
+R13	MODIFY Arg1:T30 Arg2:E15	
+R14	MODIFY Arg1:T31 Arg2:E15	
+A4	POLARITY E14 MAYBE_POS
+T32	Disease_disorder 597 614	metastatic cancer
+E16	Disease_disorder:T32 
+A5	POLARITY E16 UNCERTAIN
+T33	Diagnostic_procedure 816 832	echocardiography
+E17	Diagnostic_procedure:T33 
+T34	Detail_Description 800 815	transesophageal
+R15	MODIFY Arg1:T34 Arg2:E17	
+T35	Detail_Description 782 795	Transthoracic
+R16	MODIFY Arg1:T35 Arg2:E17	
+T36	Sign_symptom 864 868	mass
+E18	Sign_symptom:T36 
+T37	Severity 842 847	large
+R17	MODIFY Arg1:T37 Arg2:E18	
+T38	Detail_Description 848 863	well-demarcated
+R18	MODIFY Arg1:T38 Arg2:E18	
+T39	Anatomical_structure 876 903	neck from the atrial septum
+R19	MODIFY Arg1:T39 Arg2:E18	
+T40	Anatomical_structure 936 951	right ventricle
+T41	Sign_symptom 986 990	mass
+E19	Sign_symptom:T41 
+T42	Detail_Description 965 978	on both sides
+T43	Sign_symptom 922 951	Inflow to the right ventricle
+E20	Sign_symptom:T43 
+R20	MODIFY Arg1:T42 Arg2:E20	
+R21	MODIFY Arg1:T42 Arg2:E19	
+T44	Diagnostic_procedure 1009 1043	Cardiac magnetic resonance imaging
+E21	Diagnostic_procedure:T44 
+T45	Sign_symptom 1062 1101	isointense signal in T1-weighted images
+E22	Sign_symptom:T45 
+T46	Sign_symptom 1105 1160	heterogeneous hyperintense signal in T2-weighted images
+E23	Sign_symptom:T46 
+R22	MODIFY Arg1:E22 Arg2:E21	
+R23	MODIFY Arg1:E23 Arg2:E21	
+T47	Diagnostic_procedure 1232 1263	cine magnetic resonance imaging
+E24	Diagnostic_procedure:T47 
+T48	Detail_Description 1264 1297	using the gradient echo technique
+R24	MODIFY Arg1:T48 Arg2:E24	
+T49	Sign_symptom 1209 1215	No jet
+E25	Sign_symptom:T49 
+R25	MODIFY Arg1:E25 Arg2:E24	
+T50	Sign_symptom 1326 1340	no enhancement
+E26	Sign_symptom:T50 
+A6	POLARITY E25 NEG
+A7	POLARITY E26 NEG
+T51	Diagnostic_procedure 1375 1386	Angiography
+E27	Diagnostic_procedure:T51 
+T52	Sign_symptom 1394 1410	feeding arteries
+E28	Sign_symptom:T52 
+R26	MODIFY Arg1:E28 Arg2:E27	
+T53	Disease_disorder 1460 1466	myxoma
+E29	Disease_disorder:T53 
+T54	Detail_Description 1453 1459	atrial
+R27	MODIFY Arg1:T54 Arg2:E29	
+T55	Lab 1491 1503	hemodynamics
+E30	Lab:T55 
+T56	Lab_value 1509 1515	stable
+R28	MODIFY Arg1:T56 Arg2:E30	
+T57	Therapeutic_procedure 1662 1675	mass excision
+E31	Therapeutic_procedure:T57 
+T58	Anatomical_structure 1649 1661	right atrial
+R29	MODIFY Arg1:T58 Arg2:E31	
+T59	Therapeutic_procedure 1692 1710	patch implantation
+E32	Therapeutic_procedure:T59 
+T60	Anatomical_structure 1680 1691	pericardial
+R30	MODIFY Arg1:T60 Arg2:E32	
+T61	Complication 1711 1731	without complication
+R31	MODIFY Arg1:T61 Arg2:E32	
+R32	MODIFY Arg1:T61 Arg2:E31	
+T62	Date 1732 1744	3 days after
+E33	Date:T62 
+T63	Diagnostic_procedure 1745 1747	CT
+E34	Diagnostic_procedure:T63 
+#1	AnnotatorNotes E34	that is, the CT performed earlier
+T64	Disease_disorder 1749 1755	Myxoma
+E35	Disease_disorder:T64 
+T65	Sign_symptom 1835 1848	calcification
+E36	Sign_symptom:T65 
+T66	Sign_symptom 1854 1869	severe bleeding
+E37	Sign_symptom:T66 
+T67	Anatomical_structure 1821 1833	interstitium
+T68	Detail_Description 1810 1820	myxomatous
+R33	MODIFY Arg1:T68 Arg2:T67	

@@ -1,0 +1,22 @@
+T1	Date 214 227	4 and 2 y ago
+E1	Date:T1 
+T2	Time 145 148	6 h
+E2	Time:T2 
+T3	Date 323 333	1 y before
+E3	Date:T3 
+T4	Date 1299 1310	1 y earlier
+E4	Date:T4 
+T5	Date 2162 2167	day 6
+E5	Date:T5 
+T6	Date 2816 2826	28 h after
+E6	Date:T6 
+T7	Date 2851 2857	day 10
+E7	Date:T7 
+T8	Date 2970 2980	1 y before
+E8	Date:T8 
+T9	Date 3551 3558	6-month
+E9	Date:T9 
+T10	Time 2418 2424	10 min
+E10	Time:T10 
+T11	Date 3468 3480	day 63 after
+E11	Date:T11 

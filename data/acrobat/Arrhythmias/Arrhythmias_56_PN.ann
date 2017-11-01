@@ -1,0 +1,12 @@
+T1	Time 116 124	13 hours
+E1	Time:T1 
+T2	Date 275 290	24 hours before
+E2	Date:T2 
+T3	Time 528 540	4 to 8 hours
+E3	Time:T3 
+T4	Duration 1042 1054	for 48 hours
+E4	Duration:T4 
+T5	Duration 958 970	for 24 hours
+E5	Duration:T5 
+T6	Duration 1151 1162	for 8 hours
+E6	Duration:T6 

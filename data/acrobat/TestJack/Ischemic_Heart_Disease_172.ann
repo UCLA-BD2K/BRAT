@@ -1,0 +1,39 @@
+T1	Lab_value_phrase 518 611	At the time of admission, the physical examination showed heart rate (HR), 67 beats/min (bpm)
+T2	Lab_value 593 605	67 beats/min
+T3	Lab 588 590	HR
+T4	Lab_value_phrase 613 645	blood pressure (BP), 156/89 mmHg
+T5	Lab_value 634 645	156/89 mmHg
+T6	Lab 629 631	BP
+T7	Lab_value_phrase 651 678	blood glucose, 6.85 mmol/L.
+T8	Lab_value 666 677	6.85 mmol/L
+T9	Lab 651 664	blood glucose
+T10	Lab_value_phrase 1849 1876	he was given 300 mg aspirin
+T11	Lab_value 1862 1868	300 mg
+T12	Lab 1869 1876	aspirin
+T13	Lab_value_phrase 1901 1982	An initial dose of heparin (100U/kg) was intravenously given before the procedure
+T14	Lab_value 1929 1936	100U/kg
+T15	Lab 1920 1927	heparin
+T16	Lab_value_phrase 1984 2068	an additional dose of heparin at 500U would be given if the procedure lasted 1 hour.
+T17	Lab_value 2017 2021	500U
+T18	Lab 2006 2013	heparin
+T19	Lab_value_phrase 2622 2719	were inserted without a gap into the left anterior descending artery (stents were 36 mm in length
+T20	Lab_value 2704 2709	36 mm
+T21	Lab 2646 2649	gap
+T22	Lab_value_phrase 2746 2796	the left circumflex artery (stents 14 mm in length
+T23	Lab_value 2781 2786	14 mm
+T24	Lab 2790 2796	length
+T25	Lab_value_phrase 3002 3073	the stent balloon was gradually inflated to 14 atm in 10 to 40 seconds.
+T26	Lab_value 3046 3052	14 atm
+T27	Lab 3006 3011	stent
+T28	Lab_value_phrase 3727 3760	His blood pressure was 87/52 mmHg
+T29	Lab_value 3750 3760	87/52 mmHg
+T30	Lab 3731 3745	blood pressure
+T31	Lab_value_phrase 3765 3787	heart rate was 39 bpm.
+T32	Lab_value 3780 3786	39 bpm
+T33	Lab 3765 3775	heart rate
+T34	Lab_value_phrase 4074 4136	After administration of 1.5 L intravenous saline with dopamine
+T35	Lab_value 4098 4103	1.5 L
+T36	Lab 4104 4122	intravenous saline
+T37	Lab_value_phrase 4567 4653	The cardiac troponin I (cTnI) testing value was 0.06 ng/ mL (normal value 0.04 ng/mL).
+T38	Lab_value 4615 4623	0.06 ng/
+T39	Lab 4646 4651	ng/mL

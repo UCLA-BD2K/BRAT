@@ -1,0 +1,18 @@
+T1	Lab_value_phrase 212 247	Her blood pressure was 192/100mmHg,
+T2	Lab_value 235 246	192/100mmHg
+T3	Lab 216 230	blood pressure
+T4	Lab_value_phrase 252 272	pulse was 64/ minute
+T5	Lab_value 262 272	64/ minute
+T6	Lab 252 257	pulse
+T7	Lab_value_phrase 583 660	A laboratory study showed an increased level of white blood cells (10,480/μL)
+T8	Lab_value 650 659	10,480/μL
+T9	Lab 622 627	level
+T10	Lab_value_phrase 1483 1579	we injected a total of 3mg of isosorbide dinitrate (ISDN) directly into her left coronary artery
+T11	Lab_value 1506 1509	3mg
+T12	Lab 1564 1579	coronary artery
+T13	Lab_value_phrase 1984 2062	We started continuous intravenous infusion of nicorandil at a rate of 2mg/hour
+T14	Lab_value 2054 2062	2mg/hour
+T15	Lab 2030 2040	nicorandil
+T16	Lab_value_phrase 2120 2181	Creatine phosphokinase was maximal at 1073mg/dL the next day.
+T17	Lab_value 2158 2167	1073mg/dL
+T18	Lab 2120 2142	Creatine phosphokinase

@@ -1,0 +1,128 @@
+T1	Age 2 13	15-year-old
+T2	Gender 14 20	female
+T3	Nonbiological_location 46 71	periodontology department
+T4	History 89 96	history
+T5	Duration 79 88	3–4-month
+E1	Duration:T5 
+R1	MODIFY Arg1:E1 Arg2:T4	
+T6	Sign_symptom 100 104	pain
+E2	Sign_symptom:T6 
+T7	Sign_symptom 109 117	bleeding
+E3	Sign_symptom:T7 
+R2	MODIFY Arg1:E2 Arg2:T4	
+R3	MODIFY Arg1:E3 Arg2:T4	
+T8	Biological_structure 127 131	gums
+R4	MODIFY Arg1:T8 Arg2:E3	
+T9	Activity 138 144	eating
+E4	Activity:T9 
+R5	CAUSE Arg1:E4 Arg2:E3	
+R6	CAUSE Arg1:E4 Arg2:E2	
+T10	History 173 180	history
+T11	Disease_disorder 215 234	convulsive disorder
+E5	Disease_disorder:T11 
+R7	MODIFY Arg1:E5 Arg2:T10	
+T12	Date 235 255	at the age of 1 year
+E6	Date:T12 
+R8	MODIFY Arg1:E6 Arg2:E5	
+T13	Medication 281 291	medication
+E7	Medication:T13 
+R9	MODIFY Arg1:E7 Arg2:E5	
+T14	Diagnostic_procedure 293 315	Extra-oral examination
+E8	Diagnostic_procedure:T14 
+T15	Diagnostic_procedure 443 465	Intra-oral examination
+E9	Diagnostic_procedure:T15 
+T16	Sign_symptom 325 340	port wine stain
+E10	Sign_symptom:T16 
+T17	Biological_structure 348 370	right side of the face
+R10	MODIFY Arg1:T17 Arg2:E10	
+R11	MODIFY Arg1:E10 Arg2:E8	
+T18	Diagnostic_procedure 379 394	eye examination
+E11	Diagnostic_procedure:T18 
+T19	Detailed_description 402 409	dilated
+T20	Biological_structure 410 423	blood vessels
+T21	Biological_structure 431 440	right eye
+R13	MODIFY Arg1:T19 Arg2:T20	
+R14	MODIFY Arg1:T20 Arg2:E11	
+R12	MODIFY Arg1:T21 Arg2:T20	
+T22	Sign_symptom 497 504	lesions
+E12	Sign_symptom:T22 
+T23	Detailed_description 484 496	hyperplastic
+T24	Detailed_description 473 483	unilateral
+R15	MODIFY Arg1:T23 Arg2:E12	
+R16	MODIFY Arg1:T24 Arg2:E12	
+T25	Biological_structure 512 537	right side of the maxilla
+R17	MODIFY Arg1:T25 Arg2:E12	
+T26	Sign_symptom 552 559	lesions
+E13	Sign_symptom:T26 
+R18	CO-OCCURANCE Arg1:E13 Arg2:E12	
+T27	Sign_symptom 567 576	blanching
+E14	Sign_symptom:T27 
+T28	Diagnostic_procedure 582 590	pressure
+E15	Diagnostic_procedure:T28 
+R19	MODIFY Arg1:E14 Arg2:E13	
+R20	MODIFY Arg1:E13 Arg2:E15	
+T29	Disease_disorder 621 638	poor oral hygiene
+E16	Disease_disorder:T29 
+T30	Diagnostic_procedure 643 667	radiographic examination
+E17	Diagnostic_procedure:T30 
+T31	Diagnostic_procedure 671 690	lateral cephalogram
+E18	Diagnostic_procedure:T31 
+T32	Diagnostic_procedure 695 716	postero-anterior view
+E19	Diagnostic_procedure:T32 
+R21	SUB_PROCEDURE Arg1:E18 Arg2:E17	
+R22	SUB_PROCEDURE Arg1:E19 Arg2:E17	
+T33	Sign_symptom 734 747	calcification
+E20	Sign_symptom:T33 
+T34	Detailed_description 724 733	tram-line
+R23	MODIFY Arg1:T34 Arg2:E20	
+R24	MODIFY Arg1:E20 Arg2:E19	
+R25	MODIFY Arg1:E20 Arg2:E18	
+R26	CAUSE Arg1:E15 Arg2:E14	
+T35	Diagnostic_procedure 767 769	CT
+E21	Diagnostic_procedure:T35 
+T36	Sign_symptom 793 802	bone loss
+E22	Sign_symptom:T36 
+T37	Biological_structure 819 842	side of the oral cavity
+R27	MODIFY Arg1:T37 Arg2:E22	
+T38	Detailed_description 784 792	alveolar
+T39	Severity 777 783	severe
+R28	MODIFY Arg1:T38 Arg2:E22	
+R29	MODIFY Arg1:T39 Arg2:E22	
+R30	MODIFY Arg1:E22 Arg2:E21	
+T40	Disease_disorder 959 962	SWS
+E23	Disease_disorder:T40 
+#1	AnnotatorNotes E23	Sturge-Weber syndrome
+T41	Activity 946 955	diagnosis
+E24	Activity:T41 
+T42	Diagnostic_procedure 1002 1018	oral prophylaxis
+E25	Diagnostic_procedure:T42 
+T43	Medication 1037 1050	chlorhexidine
+E26	Medication:T43 
+T44	Administration 1051 1062	mouth rinse
+R31	MODIFY Arg1:T44 Arg2:E26	
+A1	POLARITY E26 UNCERTAIN
+T45	Other_entity 1067 1112	Port wine stain on the right side of the face
+#2	AnnotatorNotes T45	Image caption?
+T46	Other_entity 1114 1152	Dilated blood vessels in the right eye
+#3	AnnotatorNotes T46	Image caption?
+T47	Other_entity 1154 1198	Rare disease given oral hygiene instructions
+#4	AnnotatorNotes T47	Image caption?
+T48	Subject 1220 1227	parents
+T49	Activity 1246 1271	psychological counselling
+E27	Activity:T49 
+R32	MODIFY Arg1:E27 Arg2:T48	
+T50	Activity 29 38	presented
+E28	Activity:T50 
+R33	MODIFY Arg1:T3 Arg2:E28	
+R34	BEFORE Arg1:E2 Arg2:E28	
+*	OVERLAP E3 E2
+R35	BEFORE Arg1:E5 Arg2:E3	
+R36	AFTER Arg1:E8 Arg2:E5	
+*	OVERLAP E8 E10 E11 E9 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 E22 E29
+T51	Diagnostic_procedure 845 865	Blood investigations
+E29	Diagnostic_procedure:T51 
+T52	Qualitative_concept 871 877	normal
+R37	MODIFY Arg1:T52 Arg2:E29	
+R38	BEFORE Arg1:E29 Arg2:E24	
+R39	MODIFY Arg1:E23 Arg2:E24	
+*	OVERLAP E24 E23 E25 E26 E27

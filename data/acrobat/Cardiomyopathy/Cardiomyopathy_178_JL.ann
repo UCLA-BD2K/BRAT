@@ -1,0 +1,291 @@
+T2	Disease_disorder 168 170	MI
+E1	Disease_disorder:T2 
+T3	Detail_Description 162 167	acute
+R1	MODIFY Arg1:T3 Arg2:E1	
+T4	Gender 36 42	female
+T5	Age 24 35	54-year-old
+T1	Disease_disorder 107 109	HF
+E2	Disease_disorder:T1 
+T6	Date 137 156	three years earlier
+E3	Date:T6 
+T7	Diagnostic_procedure 184 204	coronary angiography
+E4	Diagnostic_procedure:T7 
+T10	Diagnostic_procedure 356 377	coronary intervention
+E5	Diagnostic_procedure:T10 
+T8	Activity 47 55	admitted
+E6	Activity:T8 
+T11	Other_entity 115 130	medical history
+T12	Anatomical_structure 229 250	right coronary artery
+T13	Duration 379 401	During hospitalisation
+E7	Duration:T13 
+T14	Disease_disorder 408 410	MI
+E8	Disease_disorder:T14 
+T15	Qualitative_concept 206 221	total occlusion
+R2	MODIFY Arg1:T15 Arg2:T12	
+T16	Anatomical_structure 288 319	left descending coronary artery
+T17	Qualitative_concept 256 278	collateral circulation
+R3	MODIFY Arg1:T17 Arg2:T16	
+T19	Severity 456 465	Class III
+T20	Other_entity 483 531	New York Heart Association (NYHA) classification
+T21	Activity 80 89	diagnosis
+E9	Activity:T21 
+T22	Activity 94 103	treatment
+E10	Activity:T22 
+T23	Activity 415 424	diagnosed
+E11	Activity:T23 
+T24	Activity 442 452	classified
+E12	Activity:T24 
+T25	Lab 583 622	Nterminal-pro-brain natriuretic peptide
+E13	Lab:T25 
+T26	Qualitative_concept 565 579	elevated level
+R6	MODIFY Arg1:T26 Arg2:E13	
+T27	Lab 624 633	NT-proBNP
+E14	Lab:T27 
+T28	Quantitative_concept 635 646	10581 pg/mL
+R7	MODIFY Arg1:T28 Arg2:E14	
+T29	Sign_symptom 649 668	cardiac enlargement
+E15	Sign_symptom:T29 
+T30	Lab 728 733	LVEDD
+E16	Lab:T30 
+T31	Quantitative_concept 735 740	81 mm
+R8	MODIFY Arg1:T31 Arg2:E16	
+T32	Lab 687 726	left ventricular end-diastolic diameter
+E17	Lab:T32 
+T33	Qualitative_concept 677 686	increased
+R9	MODIFY Arg1:T33 Arg2:E17	
+T34	Lab 747 781	left ventricular ejection fraction
+E18	Lab:T34 
+T35	Qualitative_concept 743 746	low
+R10	MODIFY Arg1:T35 Arg2:E18	
+T36	Lab 783 787	LVEF
+E19	Lab:T36 
+T37	Quantitative_concept 789 792	25%
+R11	MODIFY Arg1:T37 Arg2:E19	
+T40	Location 815 861	inferior, inferoseptal and inferolateral walls
+T41	Duration 931 941	Since then
+E20	Duration:T41 
+T42	Activity 964 971	treated
+E21	Activity:T42 
+T43	Disease_disorder 976 979	CAD
+E22	Disease_disorder:T43 
+T44	Disease_disorder 996 1017	arterial hypertension
+E23	Disease_disorder:T44 
+T45	Disease_disorder 1019 1040	hypercholesterolaemia
+E24	Disease_disorder:T45 
+T46	Disease_disorder 1042 1064	ventricular arrhythmia
+E25	Disease_disorder:T46 
+T47	Medication 1066 1076	carvedilol
+E26	Medication:T47 
+T48	Medication 1078 1086	ramipril
+E27	Medication:T48 
+T49	Medication 1088 1102	spironolactone
+E28	Medication:T49 
+T50	Medication 1104 1114	furosemide
+E29	Medication:T50 
+T51	Medication 1116 1128	atorvastatin
+E30	Medication:T51 
+T52	Medication 1130 1143	trimetazidine
+E31	Medication:T52 
+T53	Medication 1145 1152	aspirin
+E32	Medication:T53 
+T54	Date 1155 1171	Two months later
+E33	Date:T54 
+T55	Duration 1173 1209	during her admission to our hospital
+E34	Duration:T55 
+T56	Severity 1240 1253	NYHA class II
+T57	Lab 1255 1264	NT-proBNP
+E35	Lab:T57 
+T58	Quantitative_concept 1265 1275	1869 pg/mL
+R14	MODIFY Arg1:T58 Arg2:E35	
+T59	Sign_symptom 1211 1225	all parameters
+E36	Sign_symptom:T59 
+T60	Qualitative_concept 1230 1238	improved
+R15	MODIFY Arg1:T60 Arg2:E36	
+T61	Lab 1277 1282	LVEDD
+E37	Lab:T61 
+T62	Quantitative_concept 1283 1288	73 mm
+R16	MODIFY Arg1:T62 Arg2:E37	
+T63	Lab 1290 1294	LVEF
+E38	Lab:T63 
+T64	Quantitative_concept 1295 1298	35%
+R17	MODIFY Arg1:T64 Arg2:E38	
+T65	Disease_disorder 1336 1344	akinesis
+E39	Disease_disorder:T65 
+T66	Location 1304 1335	inferior and inferolateral wall
+T38	Disease_disorder 799 807	akinesis
+E40	Disease_disorder:T38 
+T39	Disease_disorder 881 892	hypokinesis
+E41	Disease_disorder:T39 
+T67	Qualitative_concept 867 880	severe global
+R13	MODIFY Arg1:T67 Arg2:E41	
+T68	Location 896 929	other walls of the left ventricle
+T69	Disease_disorder 1358 1369	hypokinesis
+E42	Disease_disorder:T69 
+T70	Qualitative_concept 1349 1357	moderate
+R20	MODIFY Arg1:T70 Arg2:E42	
+T71	Location 1373 1384	other walls
+T72	Diagnostic_procedure 1387 1426	Cardiovascular magnetic resonance (CMR)
+E43	Diagnostic_procedure:T72 
+T73	Activity 4062 4071	follow-up
+E44	Activity:T73 
+T74	Qualitative_concept 4076 4086	uneventful
+R22	MODIFY Arg1:T74 Arg2:E44	
+T75	Qualitative_concept 4053 4061	two-year
+R23	MODIFY Arg1:T75 Arg2:E44	
+T76	Result_outcome 4013 4047	No adverse drug reactions occurred
+T77	Date 3753 3769	After six months
+E45	Date:T77 
+T78	Medication 3788 3800	interferon-β
+E46	Medication:T78 
+T79	Severity 3842 3854	NYHA class I
+T80	Lab 3856 3865	NT-proBNP
+E47	Lab:T80 
+T81	Quantitative_concept 3866 3875	512 pg/mL
+R24	MODIFY Arg1:T81 Arg2:E47	
+T82	Lab 3877 3882	LVEDD
+E48	Lab:T82 
+T83	Quantitative_concept 3883 3888	68 mm
+R25	MODIFY Arg1:T83 Arg2:E48	
+T84	Lab 3890 3894	LVEF
+E49	Lab:T84 
+T85	Quantitative_concept 3895 3898	45%
+R26	MODIFY Arg1:T85 Arg2:E49	
+T86	Severity 3818 3840	improved significantly
+T87	Duration 3647 3676	fourth month of the treatment
+E50	Duration:T87 
+T88	Other_entity 1604 1643	no history of recent infection or fever
+T89	Lab 1462 1495	late gadolinium enhancement (LGE)
+E51	Lab:T89 
+T90	Location 1503 1591	inferoseptal (mid-wall), inferior (sub-endocardial) and inferolateral (transmural) walls
+T92	Location 1731 1762	inferoseptal and inferior walls
+T93	Diagnostic_procedure 2938 2958	coronary angiography
+E53	Diagnostic_procedure:T93 
+T94	Diagnostic_procedure 2991 3011	previous examination
+E54	Diagnostic_procedure:T94 
+T95	Diagnostic_procedure 3233 3274	Examination of frozen specimens with qPCR
+E55	Diagnostic_procedure:T95 
+T96	Diagnostic_procedure 3678 3681	EMB
+E56	Diagnostic_procedure:T96 
+T97	Sign_symptom 3700 3751	no HEV RNA was detected in the heart tissue samples
+E57	Sign_symptom:T97 
+T98	Diagnostic_procedure 1853 1869	Echocardiography
+E58	Diagnostic_procedure:T98 
+T99	Diagnostic_procedure 2069 2096	endomyocardial biopsy (EMB)
+E59	Diagnostic_procedure:T99 
+T100	Diagnostic_procedure 2330 2364	Electron microscopy of EMB samples
+E60	Diagnostic_procedure:T100 
+T101	Diagnostic_procedure 2111 2114	EMB
+E61	Diagnostic_procedure:T101 
+T102	Activity 2115 2144	did not confirm the suspicion
+E62	Activity:T102 
+T103	Therapeutic_procedure 2564 2584	HF and CAD treatment
+E63	Therapeutic_procedure:T103 
+T104	Activity 2589 2601	administered
+E64	Activity:T104 
+T105	Administration 2619 2667	guidelines of the European Society of Cardiology
+T9	Activity 334 351	had not undergone
+E65	Activity:T9 
+T18	Other_entity 59 71	our hospital
+T106	Date 2678 2696	three months later
+E66	Date:T106 
+T107	Activity 2713 2727	rehospitalised
+E67	Activity:T107 
+T108	Complication 2739 2754	HF exacerbation
+T109	Severity 2756 2770	NYHA Class III
+T110	Quantitative_concept 2782 2792	1980 pg/dL
+T111	Lab 2772 2781	NT-proBNP
+E68	Lab:T111 
+T112	Lab 2794 2802	troponin
+E69	Lab:T112 
+T113	Quantitative_concept 2803 2810	3 ng/mL
+T114	Lab 2812 2817	LVEDD
+E70	Lab:T114 
+T115	Quantitative_concept 2818 2823	77 mm
+T116	Lab 2825 2829	LVEF
+E71	Lab:T116 
+T117	Quantitative_concept 2830 2833	30%
+T118	Diagnostic_procedure 2891 2920	24-hour Holter ECG monitoring
+E72	Diagnostic_procedure:T118 
+T119	Sign_symptom 2840 2865	ventricular extrasystoles
+E73	Sign_symptom:T119 
+T120	Quantitative_concept 2835 2839	8048
+R4	MODIFY Arg1:T120 Arg2:E73	
+R5	MODIFY Arg1:T117 Arg2:E71	
+R12	MODIFY Arg1:T115 Arg2:E70	
+R18	MODIFY Arg1:T113 Arg2:E69	
+R19	MODIFY Arg1:T110 Arg2:E68	
+T121	Qualitative_concept 2866 2887	without complex forms
+R21	MODIFY Arg1:T121 Arg2:E73	
+T122	Anatomical_structure 2520 2533	blood vessels
+T123	Other_entity 2435 2445	myofibrils
+T124	Other_entity 2447 2454	nucleus
+T125	Other_entity 2456 2469	mitochondrion
+T126	Other_entity 2471 2492	endoplasmic reticulum
+T127	Other_entity 2494 2518	intercellular connection
+T128	Sign_symptom 2540 2561	no virus was detected
+E74	Sign_symptom:T128 
+T129	Sign_symptom 2374 2433	ultrastructural changes in all elements of the heart tissue
+E75	Sign_symptom:T129 
+T130	Other_entity 2165 2327	Dallas (presence of myocytolysis and myocardial fibrosis only) and immunohistochemical criteria (no CD3, CD4, CD8-positive cells, single LCA, CD68-positive cells)
+T131	Activity 171 180	confirmed
+E76	Activity:T131 
+T132	Sign_symptom 1661 1674	LV dilatation
+E77	Sign_symptom:T132 
+T91	Sign_symptom 1676 1723	a characteristic pattern of LGE for myocarditis
+E52	Sign_symptom:T91 
+T133	Lab 1827 1837	troponin I
+E78	Lab:T133 
+T134	Quantitative_concept 1839 1850	0.014 ng/mL
+R27	MODIFY Arg1:T134 Arg2:E78	
+T135	Qualitative_concept 1775 1823	persistence of a slightly elevated concentration
+R28	MODIFY Arg1:T135 Arg2:E78	
+T136	Sign_symptom 3984 3987	ExV
+E79	Sign_symptom:T136 
+T137	Medication 3394 3406	interferon-β
+E80	Medication:T137 
+T138	Activity 3379 3388	treatment
+E81	Activity:T138 
+T139	Activity 3773 3782	treatment
+E82	Activity:T139 
+T140	Activity 2959 2968	resembled
+E83	Activity:T140 
+T141	Quantitative_concept 3457 3474	62.5 μg (0.25 mL)
+T142	Date 3482 3492	first week
+E84	Date:T142 
+T143	Quantitative_concept 3494 3509	125 μg (0.5 mL)
+T144	Date 3517 3539	second and third weeks
+E85	Date:T144 
+T145	Quantitative_concept 3545 3563	187.5 μg (0.75 mL)
+R29	MODIFY Arg1:T141 Arg2:E80	
+R30	MODIFY Arg1:T143 Arg2:E80	
+R31	MODIFY Arg1:T145 Arg2:E80	
+T146	Frequency 3579 3594	every other day
+E86	Frequency:T146 
+T147	Duration 3595 3636	from the fourth to the twenty-fourth week
+E87	Duration:T147 
+T148	Administration 3564 3578	subcutaneously
+T149	Diagnostic_procedure 3935 3959	24-hour Holter recording
+E88	Diagnostic_procedure:T149 
+T150	Quantitative_concept 3979 3983	1889
+R32	MODIFY Arg1:T150 Arg2:E79	
+T151	Qualitative_concept 3989 4010	without complex forms
+R33	MODIFY Arg1:T151 Arg2:E79	
+T152	Disease_disorder 3313 3333	viral cardiomyopathy
+E89	Disease_disorder:T152 
+T153	Activity 3338 3347	diagnosed
+E90	Activity:T153 
+T154	Sign_symptom 3288 3307	presence of HEV RNA
+E91	Sign_symptom:T154 
+T155	Diagnostic_procedure 3084 3138	real-time polymerase chain reaction examination (qPCR)
+E92	Diagnostic_procedure:T155 
+A1	POLARITY E62 NEG
+T156	Other_entity 2006 2030	suspicion of myocarditis
+T157	Other_entity 1885 1896	correlation
+T158	Qualitative_concept 1881 1884	low
+R34	MODIFY Arg1:T158 Arg2:T157	
+T159	Sign_symptom 1909 1932	coronary artery changes
+E93	Sign_symptom:T159 
+T160	Sign_symptom 1937 1958	cardiac contractility
+E94	Sign_symptom:T160 
+R35	MODIFY Arg1:T157 Arg2:E93	
+R36	MODIFY Arg1:T157 Arg2:E94	

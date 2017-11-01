@@ -1,0 +1,119 @@
+T1	Age 15 24	65-yr-old
+T2	Gender 25 29	male
+T3	Subject 30 37	patient
+T4	Other_entity 51 72	outpatient department
+T5	Sign_symptom 92 100	weakness
+E1	Sign_symptom:T5 
+T6	Sign_symptom 105 115	bone pains
+E2	Sign_symptom:T6 
+T7	Anatomical_structure 105 109	bone
+T8	Subject 117 124	Patient
+T9	Activity 129 137	admitted
+E3	Activity:T9 
+T10	Activity 38 47	presented
+E4	Activity:T10 
+R1	MODIFY Arg1:T3 Arg2:E4	
+R2	MODIFY Arg1:T8 Arg2:E3	
+T11	Other_entity 141 149	hospital
+R3	MODIFY Arg1:E3 Arg2:T11	
+R4	MODIFY Arg1:E4 Arg2:T4	
+R5	MODIFY Arg1:T2 Arg2:T3	
+R6	MODIFY Arg1:T1 Arg2:T3	
+T12	Diagnostic_procedure 169 197	Peripheral smear examination
+E5	Diagnostic_procedure:T12 
+T13	Sign_symptom 205 223	rouleaux formation
+E6	Sign_symptom:T13 
+T14	Sign_symptom 230 259	microcytic hypochromic anemia
+E7	Sign_symptom:T14 
+T15	Qualitative_concept 225 229	mild
+R7	MODIFY Arg1:T15 Arg2:E7	
+T16	Sign_symptom 264 276	eosinophilia
+E8	Sign_symptom:T16 
+T17	Diagnostic_procedure 280 302	bone marrow aspiration
+E9	Diagnostic_procedure:T17 
+T18	Anatomical_structure 280 291	bone marrow
+T19	Anatomical_structure 313 324	Bone marrow
+T20	Anatomical_structure 169 185	Peripheral smear
+T21	Anatomical_structure 313 340	Bone marrow aspirate smears
+T22	Sign_symptom 348 373	hypercellular cell trails
+E10	Sign_symptom:T22 
+T23	Lab 376 402	Myeloid to erythroid ratio
+E11	Lab:T23 
+T24	Lab_value 407 410	4:1
+R8	MODIFY Arg1:T24 Arg2:E11	
+T25	Diagnostic_procedure 313 340	Bone marrow aspirate smears
+E12	Diagnostic_procedure:T25 
+T26	Lab 412 426	Erythropoiesis
+E13	Lab:T26 
+T27	Lab_value 439 462	normoblastic maturation
+R9	MODIFY Arg1:T27 Arg2:E13	
+T28	Lab 464 476	Plasma cells
+E14	Lab:T28 
+T29	Detail_Description 478 497	mature and immature
+R10	MODIFY Arg1:T29 Arg2:E14	
+T30	Lab_value 510 513	50%
+R11	MODIFY Arg1:T30 Arg2:E14	
+T31	Therapeutic_procedure 280 302	bone marrow aspiration
+E15	Therapeutic_procedure:T31 
+T32	Anatomical_structure 313 317	Bone
+T33	Detail_Description 510 554	50% of all the nucleated cells in the marrow
+R12	MODIFY Arg1:T33 Arg2:E14	
+T34	Detail_Description 561 569	atypical
+T35	Detail_Description 571 582	binucleated
+T36	Detail_Description 584 596	trinucleated
+T37	Lab 597 609	plasma cells
+E16	Lab:T37 
+R13	MODIFY Arg1:T36 Arg2:E16	
+R14	MODIFY Arg1:T35 Arg2:E16	
+R15	MODIFY Arg1:T34 Arg2:E16	
+T38	Lab 634 648	Megakaryocytes
+E17	Lab:T38 
+T39	Detail_Description 654 685	normal in number and morphology
+R16	MODIFY Arg1:T39 Arg2:E17	
+T40	Diagnostic_procedure 687 692	X-ray
+E18	Diagnostic_procedure:T40 
+T41	Anatomical_structure 700 705	bones
+T42	Sign_symptom 734 762	lesion of skull and hip bone
+E19	Sign_symptom:T42 
+T43	Qualitative_concept 713 721	multiple
+T44	Detail_Description 722 733	punched out
+R17	MODIFY Arg1:T44 Arg2:E19	
+R18	MODIFY Arg1:T43 Arg2:E19	
+R19	MODIFY Arg1:T41 Arg2:E18	
+*	OVERLAP E18 E19
+T45	Disease_disorder 788 807	plasma cell myeloma
+E20	Disease_disorder:T45 
+T46	Anatomical_structure 827 843	peripheral smear
+T47	Anatomical_structure 848 859	bone marrow
+T48	Sign_symptom 978 1006	microfilaria of W. bancrofti
+E21	Sign_symptom:T48 
+A1	POLARITY E21 POS
+T49	Lab 1020 1033	myeloma cells
+E22	Lab:T49 
+T50	Anatomical_structure 1039 1061	peripheral blood smear
+T51	Anatomical_structure 1066 1085	bone aspirate smear
+T52	Lab 1140 1152	microfilaria
+E23	Lab:T52 
+T53	Anatomical_structure 1160 1176	peripheral smear
+A2	POLARITY E23 POS
+R20	MODIFY Arg1:T53 Arg2:E23	
+T54	Subject 1233 1240	patient
+R21	MODIFY Arg1:E6 Arg2:E5	
+R22	MODIFY Arg1:E7 Arg2:E5	
+R23	MODIFY Arg1:E8 Arg2:E5	
+R24	MODIFY Arg1:E10 Arg2:E12	
+R25	MODIFY Arg1:E11 Arg2:E9	
+R26	MODIFY Arg1:E13 Arg2:E9	
+R27	MODIFY Arg1:E14 Arg2:E9	
+R28	MODIFY Arg1:E16 Arg2:E9	
+R29	MODIFY Arg1:E17 Arg2:E9	
+T55	Sign_symptom 412 426	Erythropoiesis
+E24	Sign_symptom:T55 
+T56	Detail_Description 439 462	normoblastic maturation
+R30	MODIFY Arg1:T56 Arg2:E24	
+T57	Sign_symptom 1020 1033	myeloma cells
+E25	Sign_symptom:T57 
+T58	Diagnostic_procedure 412 426	Erythropoiesis
+E26	Diagnostic_procedure:T58 
+T59	Result_outcome 439 462	normoblastic maturation
+R31	MODIFY Arg1:T59 Arg2:E26	

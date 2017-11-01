@@ -1,0 +1,260 @@
+T1	Age 4 16	ten-year-old
+T2	Gender 17 23	female
+T3	History 29 59	no significant medical history
+T4	Activity 64 72	admitted
+E1	Activity:T4 
+T5	Location 80 100	emergency department
+R1	MODIFY Arg1:T5 Arg2:E1	
+T6	Sign_symptom 107 114	syncope
+E2	Sign_symptom:T6 
+T7	Activity 121 131	exercising
+E3	Activity:T7 
+R2	MODIFY Arg1:E3 Arg2:E2	
+T8	Sign_symptom 142 151	nauseated
+E4	Sign_symptom:T8 
+T9	Activity 158 185	running at gymnastics class
+E5	Activity:T9 
+R3	MODIFY Arg1:E5 Arg2:E4	
+T10	Sign_symptom 192 201	collapsed
+E6	Sign_symptom:T10 
+T11	Sign_symptom 211 222	unconscious
+E7	Sign_symptom:T11 
+T12	Duration 227 242	several minutes
+E8	Duration:T12 
+R4	MODIFY Arg1:E8 Arg2:E7	
+T13	Activity 249 256	arrival
+E9	Activity:T13 
+T14	Location 264 272	hospital
+R5	MODIFY Arg1:T14 Arg2:E9	
+T15	Sign_symptom 282 290	dyspneic
+E10	Sign_symptom:T15 
+T16	Sign_symptom 295 304	hypoxemic
+E11	Sign_symptom:T16 
+T17	Sign_symptom 312 327	pulmonary edema
+E12	Sign_symptom:T17 
+T18	Cause 312 327	pulmonary edema
+R6	MODIFY Arg1:T18 Arg2:E11	
+R7	MODIFY Arg1:T18 Arg2:E10	
+T19	Therapeutic_procedure 341 365	positive airway pressure
+E13	Therapeutic_procedure:T19 
+T20	Therapeutic_procedure 379 389	intubation
+E14	Therapeutic_procedure:T20 
+T21	Diagnostic_procedure 403 426	electrocardiogram (ECG)
+E15	Diagnostic_procedure:T21 
+T22	Sign_symptom 473 494	ST-segment depression
+E16	Sign_symptom:T22 
+T23	Qualitative_concept 464 472	inferior
+R8	MODIFY Arg1:T23 Arg2:E16	
+T24	Anatomical_structure 447 459	anteroseptal
+R9	MODIFY Arg1:T24 Arg2:E16	
+#1	AnnotatorNotes T23	this modifier refers to the type of results (the set of leads used in the ECG) rather than an anatomical structure
+T25	Lab 500 510	troponin I
+E17	Lab:T25 
+T26	Qualitative_concept 515 523	elevated
+T27	Lab_value 527 536	2.9 ng/mL
+R10	MODIFY Arg1:T26 Arg2:E17	
+R11	MODIFY Arg1:T27 Arg2:E17	
+T28	Time 537 555	within three hours
+E18	Time:T28 
+R12	MODIFY Arg1:E18 Arg2:E17	
+T29	Anatomical_structure 608 621	transthoracic
+T30	Diagnostic_procedure 622 638	echocardiography
+E19	Diagnostic_procedure:T30 
+R13	MODIFY Arg1:T29 Arg2:E19	
+T31	Diagnostic_procedure 652 671	computed tomography
+E20	Diagnostic_procedure:T31 
+T32	Detail_Description 688 697	anomalous
+T33	Anatomical_structure 698 704	aortic
+T34	Sign_symptom 705 760	origin of the left coronary artery from the right sinus
+E21	Sign_symptom:T34 
+R14	MODIFY Arg1:T32 Arg2:E21	
+R15	MODIFY Arg1:T33 Arg2:E21	
+T35	Sign_symptom 773 781	stenosis
+E22	Sign_symptom:T35 
+T36	Anatomical_structure 789 831	left main coronary in the proximal segment
+R16	MODIFY Arg1:T36 Arg2:E22	
+T37	Detail_Description 767 772	clear
+R17	MODIFY Arg1:T37 Arg2:E22	
+T38	Diagnostic_procedure 833 852	Pulsed wave Doppler
+E23	Diagnostic_procedure:T38 
+T39	Lab_value 865 897	11 mm Hg peak diastolic gradient
+R18	MODIFY Arg1:T39 Arg2:E23	
+T40	Anatomical_structure 905 923	left main coronary
+T41	Lab 937 971	left ventricular ejection fraction
+E24	Lab:T41 
+T42	Lab_value 976 979	51%
+R19	MODIFY Arg1:T42 Arg2:E24	
+T43	Sign_symptom 980 1030	without obvious regional wall motion abnormalities
+E25	Sign_symptom:T43 
+T44	Duration 1032 1060	Over the subsequent 24 hours
+E26	Duration:T44 
+T45	Sign_symptom 1066 1081	pulmonary edema
+E27	Sign_symptom:T45 
+T46	Severity 1082 1104	significantly improved
+R20	MODIFY Arg1:T46 Arg2:E27	
+T47	Diagnostic_procedure 1110 1113	ECG
+E28	Diagnostic_procedure:T47 
+T48	Sign_symptom 1114 1125	ST segments
+E29	Sign_symptom:T48 
+T49	Severity 1126 1136	normalized
+R21	MODIFY Arg1:T49 Arg2:E29	
+T50	Lab 1146 1156	troponin I
+E30	Lab:T50 
+T51	Qualitative_concept 1219 1236	steadily declined
+R22	MODIFY Arg1:T51 Arg2:E30	
+T52	Qualitative_concept 1164 1171	peaking
+R23	MODIFY Arg1:T52 Arg2:E30	
+T53	Lab_value 1175 1184	8.2 ng/mL
+R24	MODIFY Arg1:T53 Arg2:E30	
+T54	Time 1185 1217	8 hours after the initial arrest
+E31	Time:T54 
+R25	MODIFY Arg1:E31 Arg2:T53	
+T55	Therapeutic_procedure 1276 1291	surgical repair
+E32	Therapeutic_procedure:T55 
+T56	Anatomical_structure 1309 1317	coronary
+T57	Detail_Description 1299 1308	anomalous
+R26	MODIFY Arg1:T57 Arg2:T56	
+T58	Time 1318 1342	within the next 48 hours
+E33	Time:T58 
+T59	Sign_symptom 1374 1399	left ventricular function
+E34	Sign_symptom:T59 
+T60	Therapeutic_procedure 1527 1536	extubated
+E35	Therapeutic_procedure:T60 
+#2	AnnotatorNotes E35	This isn't really a therapeutic procedure, just the reversal of the intubation in line 3
+T61	Complication 1537 1550	without event
+R27	MODIFY Arg1:T61 Arg2:E35	
+T62	Sign_symptom 1560 1565	alert
+E36	Sign_symptom:T62 
+T63	Sign_symptom 1570 1579	talkative
+E37	Sign_symptom:T63 
+T64	Sign_symptom 1585 1612	all vital signs were normal
+E38	Sign_symptom:T64 
+T65	Time 1614 1641	Five hours after extubation
+E39	Time:T65 
+T66	Therapeutic_procedure 1631 1641	extubation
+E40	Therapeutic_procedure:T66 
+T67	Sign_symptom 1671 1683	desaturation
+E41	Sign_symptom:T67 
+#3	AnnotatorNotes E41	low blood oxygen
+T68	Quantitative_concept 1687 1690	90%
+R28	MODIFY Arg1:T68 Arg2:E41	
+T69	Sign_symptom 1709 1719	chest pain
+E42	Sign_symptom:T69 
+T70	Detail_Description 1665 1670	acute
+R29	MODIFY Arg1:T70 Arg2:E41	
+T71	Severity 1656 1660	mild
+R30	MODIFY Arg1:T71 Arg2:E41	
+T72	Sign_symptom 1721 1742	ST-segment depression
+E43	Sign_symptom:T72 
+T73	Sign_symptom 1779 1796	Sinus bradycardia
+E44	Sign_symptom:T73 
+T74	Sign_symptom 1801 1812	hypotension
+E45	Sign_symptom:T74 
+T75	Qualitative_concept 1813 1829	occurred quickly
+R31	MODIFY Arg1:T75 Arg2:E45	
+R32	MODIFY Arg1:T75 Arg2:E44	
+T76	Therapeutic_procedure 1839 1848	intubated
+E46	Therapeutic_procedure:T76 
+T77	Therapeutic_procedure 1866 1885	volume resuscitated
+E47	Therapeutic_procedure:T77 
+T78	Qualitative_concept 1853 1865	aggressively
+R33	MODIFY Arg1:T78 Arg2:E47	
+T79	Medication 1893 1906	nitroglycerin
+E48	Medication:T79 
+T80	Administration 1907 1915	infusion
+R34	MODIFY Arg1:T80 Arg2:E48	
+T81	Medication 1948 1959	epinephrine
+E49	Medication:T81 
+T82	Medication 1964 1972	dopamine
+E50	Medication:T82 
+T83	Administration 1973 1982	infusions
+R35	MODIFY Arg1:T83 Arg2:E50	
+R36	MODIFY Arg1:T83 Arg2:E49	
+T84	Sign_symptom 1988 1994	rhythm
+E51	Sign_symptom:T84 
+T85	Sign_symptom 2010 2018	asystole
+E52	Sign_symptom:T85 
+#4	AnnotatorNotes E51	Rhythm isn't really a sign by itself - everyone alive has a heartbeat
+T86	Sign_symptom 2025 2049	ventricular fibrillation
+E53	Sign_symptom:T86 
+T87	Therapeutic_procedure 2056 2069	resuscitation
+E54	Therapeutic_procedure:T87 
+T88	Therapeutic_procedure 2092 2127	extracorporeal membrane oxygenation
+E55	Therapeutic_procedure:T88 
+T89	Activity 2154 2164	evaluation
+E56	Activity:T89 
+T90	Sign_symptom 2186 2210	anoxic neurologic insult
+E57	Sign_symptom:T90 
+T91	Severity 2174 2185	substantial
+R37	MODIFY Arg1:T91 Arg2:E57	
+T92	Anatomical_structure 2233 2246	biventricular
+T93	Sign_symptom 2247 2272	systolic cardiac function
+E58	Sign_symptom:T93 
+T94	Severity 2277 2293	severely reduced
+R38	MODIFY Arg1:T94 Arg2:E58	
+R39	MODIFY Arg1:T92 Arg2:E58	
+T95	Therapeutic_procedure 2295 2330	Compassionate withdrawal of support
+E59	Therapeutic_procedure:T95 
+T96	Qualitative_concept 2350 2378	at the request of the family
+R40	MODIFY Arg1:T96 Arg2:E59	
+T97	Diagnostic_procedure 2380 2387	Autopsy
+E60	Diagnostic_procedure:T97 
+T98	Anatomical_structure 2410 2442	left main coronary artery ostium
+T99	Qualitative_concept 2447 2456	slit like
+T100	Qualitative_concept 2471 2481	''hooded''
+T101	Severity 2461 2470	partially
+R41	MODIFY Arg1:T101 Arg2:T100	
+R42	MODIFY Arg1:T100 Arg2:T98	
+R43	MODIFY Arg1:T99 Arg2:T98	
+T102	Qualitative_concept 2487 2521	exited the aorta at an acute angle
+R44	MODIFY Arg1:T102 Arg2:T98	
+T103	Quantitative_concept 2535 2563	2 to 3 mm intramural segment
+T104	Qualitative_concept 2573 2627	majority of the interarterial segment of the left main
+T105	Qualitative_concept 2632 2642	extramural
+R45	MODIFY Arg1:T104 Arg2:T105	
+R46	MODIFY Arg1:T103 Arg2:T98	
+R47	MODIFY Arg1:T105 Arg2:T98	
+T106	Sign_symptom 2663 2691	myocardial ischemic necrosis
+E61	Sign_symptom:T106 
+T107	Severity 2655 2662	massive
+R48	MODIFY Arg1:T107 Arg2:E61	
+T108	Anatomical_structure 2699 2713	left ventricle
+T109	Anatomical_structure 2718 2736	ventricular septum
+T110	Detail_Description 2755 2760	acute
+R49	MODIFY Arg1:T110 Arg2:E61	
+R50	MODIFY Arg1:T108 Arg2:E61	
+R51	MODIFY Arg1:T109 Arg2:E61	
+T111	Sign_symptom 2772 2811	no evidence of chronic ischemic changes
+E62	Sign_symptom:T111 
+T112	Other_entity 2813 3181;3182 3349	. Autopsy photograph of the left main coronary in cross section at the interarterial portion of the artery. A probe is placed through the coronary artery, which is opened to reveal the relationship with the aortic wall. At this distance of 5 mm from the origin, the artery is extramural, despite appearing to be intramural at this location on computed tomography scan. . Computed tomography scan confirming the origin and course of the anomalous left coronary artery. Note the paucity of contrast in the artery due to proximal stenosis.
+#5	AnnotatorNotes T112	These are figure captions and hence out of order
+R52	AFTER Arg1:E1 Arg2:E2	
+*	OVERLAP E2 E3 E4 E5 E6 E7
+R53	BEFORE Arg1:E7 Arg2:E9	
+*	OVERLAP E9 E10 E11 E12 E13 E14 E15 E16 E17 E19 E20 E21 E22 E23 E24 E25
+T113	Result_outcome 473 494	ST-segment depression
+R54	MODIFY Arg1:T113 Arg2:E15	
+T114	Result_outcome 705 760	origin of the left coronary artery from the right sinus
+T115	Result_outcome 773 781	stenosis
+R55	MODIFY Arg1:T114 Arg2:E19	
+R56	MODIFY Arg1:T114 Arg2:E20	
+R57	MODIFY Arg1:T115 Arg2:E20	
+R58	MODIFY Arg1:T115 Arg2:E19	
+T116	Result_outcome 865 897	11 mm Hg peak diastolic gradient
+R59	MODIFY Arg1:T40 Arg2:T39	
+R60	MODIFY Arg1:T116 Arg2:E23	
+R61	BEFORE Arg1:E25 Arg2:E26	
+*	OVERLAP E26 E27 E28 E29 E30 E32 E63 E34
+T117	Result_outcome 1114 1125	ST segments
+R62	MODIFY Arg1:T117 Arg2:E28	
+T118	Activity 1354 1364	assumption
+E63	Activity:T118 
+#6	AnnotatorNotes E63	possible indicator that the subsequent material is theoretical?
+A1	POLARITY E34 UNCERTAIN
+R63	BEFORE Arg1:E34 Arg2:E35	
+*	OVERLAP E35 E36 E37 E38
+R64	BEFORE Arg1:E38 Arg2:E39	
+R65	MODIFY Arg1:E52 Arg2:E51	
+*	OVERLAP E53 E51 E39 E41 E42 E43 E44 E45 E46 E47 E48 E49 E50 E54 E55 E56 E57 E58 E59
+R66	BEFORE Arg1:E59 Arg2:E60	
+*	OVERLAP E60 E61 E62

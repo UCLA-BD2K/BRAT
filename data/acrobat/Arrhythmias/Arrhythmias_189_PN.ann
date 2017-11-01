@@ -1,0 +1,14 @@
+T1	Date 917 925	8 months
+E1	Date:T1 
+T2	Date 963 982	Eleven months after
+E2	Date:T2 
+T3	Date 2637 2642	1 day
+E3	Date:T3 
+T4	Date 2644 2651	1 month
+E4	Date:T4 
+T5	Date 2653 2661	3 months
+E5	Date:T5 
+T6	Date 2667 2673	1 year
+E6	Date:T6 
+T7	Date 2854 2880	1 year and 11 months after
+E7	Date:T7 

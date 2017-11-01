@@ -1,0 +1,150 @@
+T1	Sign_symptom 0 19	R everse remodeling
+E1	Sign_symptom:T1 
+T2	Subject 41 49	patients
+T3	Activity 32 37	occur
+E2	Activity:T3 
+T4	Disease_disorder 80 115	nonischemic dilated cardiomyopathy.
+E3	Disease_disorder:T4 
+T5	Qualitative_concept 55 76	de novo presentations
+R1	MODIFY Arg1:E3 Arg2:T5	
+T6	Sign_symptom 116 126	Predictors
+E4	Sign_symptom:T6 
+T7	Sign_symptom 135 148	recent onset,
+E5	Sign_symptom:T7 
+T8	Gender 149 159	female sex
+T9	Sign_symptom 149 159	female sex
+E6	Sign_symptom:T9 
+T10	Sign_symptom 161 207	higher left ventricular (LV) ejection fraction
+E7	Sign_symptom:T10 
+T11	Detailed_description 211 239	echocardiography at baseline
+T12	Sign_symptom 241 271	higher systolic blood pressure
+E8	Sign_symptom:T12 
+T13	Sign_symptom 273 331	QRS width <120 ms (or absence of left bundle branch block)
+E9	Sign_symptom:T13 
+T14	Sign_symptom 336 356	normal LV dimensions
+E10	Sign_symptom:T14 
+T15	Biological_attribute 135 356	recent onset, female sex, higher left ventricular (LV) ejection fraction by echocardiography at baseline, higher systolic blood pressure, QRS width <120 ms (or absence of left bundle branch block) and normal LV dimensions
+R2	CAUSE Arg1:T15 Arg2:E4	
+T16	Medication 1375 1382	digoxin
+E11	Medication:T16 
+T17	Medication 1384 1394	carvedilol
+E12	Medication:T17 
+T18	Medication 1400 1409	aldactone
+E13	Medication:T18 
+T19	Diagnostic_procedure 1215 1238	Cardiac catheterization
+E14	Diagnostic_procedure:T19 
+T20	Detailed_description 1252 1276	normal coronary arteries
+T21	Sign_symptom 1284 1321	LV end-diastolic pressure of 17 mm Hg
+E15	Sign_symptom:T21 
+T22	Biological_attribute 1284 1321	LV end-diastolic pressure of 17 mm Hg
+T23	Subject 1323 1325	He
+T24	Activity 1330 1340	discharged
+E16	Activity:T24 
+T25	Detailed_description 1341 1345	home
+R3	MODIFY Arg1:T25 Arg2:E16	
+T26	Sign_symptom 370 387	increased LV size
+E17	Sign_symptom:T26 
+T27	Qualitative_concept 405 427	poor prognostic marker
+R4	MODIFY Arg1:T22 Arg2:E14	
+T28	Medication 1443 1482	angiotensin-converting enzyme inhibitor
+E18	Medication:T28 
+T29	Medication 1487 1518	angiotensin receptor antagonist
+E19	Medication:T29 
+T30	Administration 1523 1533	prescribed
+R5	MODIFY Arg1:E18 Arg2:T30	
+R6	MODIFY Arg1:E19 Arg2:T30	
+T31	Time 1534 1546	at that time
+E20	Time:T31 
+R7	CO-OCCURANCE Arg1:E20 Arg2:E18	
+T32	Subject 1552 1559	patient
+T33	Activity 1564 1568	lost
+E21	Activity:T33 
+T34	Activity 1573 1581	ollow-up
+E22	Activity:T34 
+T35	Time 1636 1649	3 years later
+E23	Time:T35 
+T36	Duration 1636 1649	3 years later
+E24	Duration:T36 
+R8	MODIFY Arg1:E24 Arg2:T32	
+T37	Sign_symptom 1665 1677	palpitations
+E25	Sign_symptom:T37 
+T38	Activity 1665 1677	palpitations
+E26	Activity:T38 
+T39	Biological_attribute 1665 1677	palpitations
+R9	CO-OCCURANCE Arg1:T39 Arg2:E24	
+T40	Subject 633 640	patient
+T41	Age 644 655	45-year-old
+T42	Ethnicity 656 661	black
+T43	Gender 662 665	man
+T44	Diagnostic_procedure 681 690	diagnosed
+E27	Diagnostic_procedure:T44 
+T45	Disease_disorder 696 718	dilated cardiomyopathy
+E28	Disease_disorder:T45 
+T46	Activity 728 737	admission
+E29	Activity:T46 
+T47	Sign_symptom 767 784	sinus tachycardia
+E30	Sign_symptom:T47 
+T48	Sign_symptom 786 793	dyspnea
+E31	Sign_symptom:T48 
+T49	Sign_symptom 799 814	volume overload
+E32	Sign_symptom:T49 
+R10	CAUSE Arg1:E30 Arg2:E28	
+R11	CAUSE Arg1:E31 Arg2:E28	
+R12	CAUSE Arg1:E32 Arg2:E28	
+R13	BEFORE Arg1:E28 Arg2:E27	
+R14	CAUSE Arg1:E28 Arg2:E27	
+T50	Qualitative_concept 671 680	initially
+R15	MODIFY Arg1:T50 Arg2:E27	
+T51	Subject 816 818	He
+T52	Activity 819 825	denied
+E33	Activity:T52 
+T53	Other_entity 826 833	alcohol
+T54	Other_entity 835 839	drug
+T55	Other_entity 844 853	stimulant
+T56	Activity 854 857	use
+E34	Activity:T56 
+R16	MODIFY Arg1:T53 Arg2:E34	
+R17	MODIFY Arg1:T53 Arg2:E34	
+R18	MODIFY Arg1:T54 Arg2:E34	
+T57	Qualitative_concept 866 878	risk factors
+T58	Disease_disorder 883 912	Human Immunodeficiency Virus;
+E35	Disease_disorder:T58 
+R19	MODIFY Arg1:T57 Arg2:E35	
+T59	Qualitative_concept 863 865	no
+R20	MODIFY Arg1:T59 Arg2:T57	
+T60	Qualitative_concept 921 923	no
+T61	Detailed_description 925 938	amily history
+R21	MODIFY Arg1:T60 Arg2:T61	
+T62	Disease_disorder 942 956	cardiomyopathy
+E36	Disease_disorder:T62 
+R22	CO-OCCURANCE Arg1:E36 Arg2:T60	
+T63	Time 962 969	initial
+E37	Time:T63 
+T64	Diagnostic_procedure 970 998	transthoracic echocardiogram
+E38	Diagnostic_procedure:T64 
+T65	Activity 999 1007	revealed
+E39	Activity:T65 
+T66	Volume 1011 1028	ejection fraction
+T67	Volume 1032 1035	21%
+R23	CO-OCCURANCE Arg1:T66 Arg2:T67	
+T68	Qualitative_concept 1041 1047	severe
+T69	Disease_disorder 1048 1068	mitral regurgitation
+E40	Disease_disorder:T69 
+T70	Sign_symptom 1048 1068	mitral regurgitation
+E41	Sign_symptom:T70 
+T71	Biological_structure 1073 1088	LV end-systolic
+T72	Biological_structure 1093 1117	end-diastolic dimensions
+T73	Distance 1119 1125	6.3 cm
+T74	Distance 1130 1136	7.3 cm
+R24	MODIFY Arg1:T74 Arg2:T72	
+R25	MODIFY Arg1:T73 Arg2:T71	
+T75	Biological_attribute 1153 1184	Brain natriuretic peptide (BNP)
+T76	Activity 1189 1197	recorded
+E42	Activity:T76 
+T77	Quantitative_concept 1201 1210	368 pg/mL
+R26	MODIFY Arg1:T77 Arg2:E42	
+T78	Therapeutic_procedure 1349 1364	medical therapy
+E43	Therapeutic_procedure:T78 
+R27	BEFORE Arg1:E43 Arg2:E11	
+R28	BEFORE Arg1:E43 Arg2:E12	
+R29	BEFORE Arg1:E43 Arg2:E13	

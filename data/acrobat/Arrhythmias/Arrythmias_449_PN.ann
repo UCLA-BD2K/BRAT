@@ -1,0 +1,38 @@
+T1	Duration 145 156	for 3 years
+E1	Duration:T1 
+T2	Frequency 1372 1386	every 12 hours
+E2	Frequency:T2 
+T3	Date 1599 1612	The day after
+E3	Date:T3 
+T4	Date 1951 1967	9th hospital day
+E4	Date:T4 
+T5	Date 2012 2029	18th hospital day
+E5	Date:T5 
+T6	Date 3874 3891	39th hospital day
+E6	Date:T6 
+T7	Date 4179 4196	49th hospital day
+E7	Date:T7 
+T8	Date 4450 4467	60th hospital day
+E8	Date:T8 
+T9	Date 4665 4682	64th hospital day
+E9	Date:T9 
+T10	Date 4786 4800	5 months after
+E10	Date:T10 
+T11	Date 5049 5064	12 months after
+E11	Date:T11 
+T12	Date 5348 5368	26 months post-onset
+E12	Date:T12 
+T13	Date 5212 5227	20 months after
+E13	Date:T13 
+T14	Frequency 4767 4780	every 2 weeks
+E14	Frequency:T14 
+T15	Duration 5679 5699	3 years of follow-up
+E15	Duration:T15 
+T16	Duration 6022 6033	few minutes
+E16	Duration:T16 
+T17	Duration 6037 6043	5 days
+E17	Duration:T17 
+T18	Duration 6122 6137	several minutes
+E18	Duration:T18 
+T19	Duration 6141 6149	2 months
+E19	Duration:T19 

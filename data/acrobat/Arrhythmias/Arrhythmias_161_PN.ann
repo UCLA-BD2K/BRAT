@@ -1,0 +1,24 @@
+T1	Duration 1303 1326	approximately six hours
+E1	Duration:T1 
+T2	Time 1520 1535	after six hours
+E2	Time:T2 
+T3	Duration 1958 1965	8 hours
+E3	Duration:T3 
+T4	Duration 1988 1996	12 hours
+E4	Duration:T4 
+T5	Date 2089 2094	Day 3
+E5	Date:T5 
+T6	Date 1540 1545	Day 2
+E6	Date:T6 
+T7	Time 2550 2566	after 10 minutes
+E7	Time:T7 
+T8	Date 3686 3691	Day 6
+E8	Date:T8 
+T9	Frequency 4044 4068	approximately 30 minutes
+E9	Frequency:T9 
+T10	Duration 5016 5023	8 hours
+E10	Duration:T10 
+T11	Duration 5307 5314	8 hours
+E11	Duration:T11 
+T12	Duration 6427 6434	8 hours
+E12	Duration:T12 

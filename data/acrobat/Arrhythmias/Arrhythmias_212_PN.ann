@@ -1,0 +1,6 @@
+T1	Duration 48 54	3-year
+E1	Duration:T1 
+T2	Date 163 177	After 3 months
+E2	Date:T2 
+T3	Duration 1762 1770	6 months
+E3	Duration:T3 

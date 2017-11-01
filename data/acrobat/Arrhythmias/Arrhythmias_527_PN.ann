@@ -1,0 +1,12 @@
+T1	Date 85 98	1 month prior
+E1	Date:T1 
+T2	Date 175 188	30 days prior
+E2	Date:T2 
+T3	Time 325 328	5 s
+E3	Time:T3 
+T4	Time 526 536	10 minutes
+E4	Time:T4 
+T5	Date 1738 1750	3 days later
+E5	Date:T5 
+T6	Duration 588 604	within 2.5 hours
+E6	Duration:T6 

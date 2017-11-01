@@ -1,0 +1,337 @@
+T1	Age 24 35	54-year-old
+T2	Gender 36 42	female
+T3	Activity 47 55	admitted
+E1	Activity:T3 
+T4	Disease_disorder 107 109	HF
+E2	Disease_disorder:T4 
+T5	Time 137 156	three years earlier
+E3	Time:T5 
+T6	Disease_disorder 162 170	acute MI
+E4	Disease_disorder:T6 
+T7	Diagnostic_procedure 184 204	coronary angiography
+E5	Diagnostic_procedure:T7 
+T8	Sign_symptom 212 221	occlusion
+E6	Sign_symptom:T8 
+T9	Anatomical_structure 229 250	right coronary artery
+R1	MODIFY Arg1:T9 Arg2:E6	
+T10	Severity 206 211	total
+R2	MODIFY Arg1:T10 Arg2:E6	
+T11	Sign_symptom 256 278	collateral circulation
+E7	Sign_symptom:T11 
+T12	Anatomical_structure 288 319	left descending coronary artery
+R3	MODIFY Arg1:T12 Arg2:E7	
+T13	Lab 583 622	Nterminal-pro-brain natriuretic peptide
+E8	Lab:T13 
+T14	Lab_value 635 646	10581 pg/mL
+T15	Quantitative_concept 635 646	10581 pg/mL
+T16	Qualitative_concept 565 573	elevated
+R4	MODIFY Arg1:T16 Arg2:E8	
+R5	MODIFY Arg1:T14 Arg2:E8	
+T17	Disease_disorder 456 465	Class III
+E9	Disease_disorder:T17 
+T18	Subject 483 531	New York Heart Association (NYHA) classification
+R6	MODIFY Arg1:T18 Arg2:E9	
+T19	Time 403 424	when MI was diagnosed
+E10	Time:T19 
+T20	Sign_symptom 649 668	cardiac enlargement
+E11	Sign_symptom:T20 
+T21	Therapeutic_procedure 356 377	coronary intervention
+E12	Therapeutic_procedure:T21 
+A1	POLARITY E12 NEG
+T22	Lab 687 726	left ventricular end-diastolic diameter
+E13	Lab:T22 
+T23	Lab_value 735 740	81 mm
+R7	MODIFY Arg1:T23 Arg2:E13	
+T24	Qualitative_concept 677 686	increased
+R8	MODIFY Arg1:T24 Arg2:E13	
+T25	Lab 747 781	left ventricular ejection fraction
+E14	Lab:T25 
+T26	Lab_value 789 792	25%
+T27	Qualitative_concept 743 746	low
+R9	MODIFY Arg1:T27 Arg2:E14	
+R10	MODIFY Arg1:T26 Arg2:E14	
+T28	Sign_symptom 799 807	akinesis
+E15	Sign_symptom:T28 
+T29	Anatomical_structure 815 823	inferior
+T30	Anatomical_structure 825 837	inferoseptal
+T31	Anatomical_structure 842 855	inferolateral
+T32	Anatomical_structure 856 861	walls
+R11	MODIFY Arg1:T31 Arg2:T32	
+R12	MODIFY Arg1:T30 Arg2:T32	
+R13	MODIFY Arg1:T29 Arg2:T32	
+R14	MODIFY Arg1:T32 Arg2:E15	
+T33	Sign_symptom 881 892	hypokinesis
+E16	Sign_symptom:T33 
+T34	Anatomical_structure 896 929	other walls of the left ventricle
+T35	Location 874 880	global
+T36	Severity 867 873	severe
+R15	MODIFY Arg1:T34 Arg2:E16	
+R16	MODIFY Arg1:T35 Arg2:T34	
+R17	MODIFY Arg1:T36 Arg2:E16	
+T37	Disease_disorder 996 1017	arterial hypertension
+E17	Disease_disorder:T37 
+T38	Disease_disorder 1019 1040	hypercholesterolaemia
+E18	Disease_disorder:T38 
+T39	Disease_disorder 1042 1064	ventricular arrhythmia
+E19	Disease_disorder:T39 
+T40	Disease_disorder 976 979	CAD
+E20	Disease_disorder:T40 
+T41	Medication 1066 1076	carvedilol
+E21	Medication:T41 
+T42	Medication 1078 1086	ramipril
+E22	Medication:T42 
+T43	Medication 1088 1102	spironolactone
+E23	Medication:T43 
+T44	Medication 1104 1114	furosemide
+E24	Medication:T44 
+T45	Medication 1116 1128	atorvastatin
+E25	Medication:T45 
+T46	Medication 1130 1143	trimetazidine
+E26	Medication:T46 
+T47	Medication 1145 1152	aspirin
+E27	Medication:T47 
+T48	Time 1155 1171	Two months later
+E28	Time:T48 
+T49	Disease_disorder 1240 1253	NYHA class II
+E29	Disease_disorder:T49 
+T50	Lab 1255 1264	NT-proBNP
+E30	Lab:T50 
+T51	Lab 1277 1282	LVEDD
+E31	Lab:T51 
+T52	Lab 1290 1294	LVEF
+E32	Lab:T52 
+T53	Lab_value 1265 1275	1869 pg/mL
+T54	Lab_value 1283 1288	73 mm
+T55	Lab_value 1295 1298	35%
+T56	Activity 1184 1193	admission
+E33	Activity:T56 
+T57	Qualitative_concept 1230 1238	improved
+R18	MODIFY Arg1:T53 Arg2:E30	
+R19	MODIFY Arg1:T54 Arg2:E31	
+R20	MODIFY Arg1:T55 Arg2:E32	
+R21	MODIFY Arg1:T57 Arg2:E30	
+R22	MODIFY Arg1:T57 Arg2:E31	
+R23	MODIFY Arg1:T57 Arg2:E32	
+T58	Anatomical_structure 1304 1335	inferior and inferolateral wall
+T59	Sign_symptom 1336 1344	akinesis
+E34	Sign_symptom:T59 
+T60	Sign_symptom 1358 1369	hypokinesis
+E35	Sign_symptom:T60 
+T61	Anatomical_structure 1373 1384	other walls
+T62	Severity 1349 1357	moderate
+R24	MODIFY Arg1:T58 Arg2:E34	
+R25	MODIFY Arg1:T62 Arg2:E35	
+R26	MODIFY Arg1:T61 Arg2:E35	
+T63	Diagnostic_procedure 1387 1420	Cardiovascular magnetic resonance
+E36	Diagnostic_procedure:T63 
+T64	Sign_symptom 1462 1489	late gadolinium enhancement
+E37	Sign_symptom:T64 
+T65	Anatomical_structure 1503 1526	inferoseptal (mid-wall)
+T66	Anatomical_structure 1528 1554	inferior (sub-endocardial)
+T67	Anatomical_structure 1559 1585	inferolateral (transmural)
+T68	Anatomical_structure 1586 1591	walls
+R27	MODIFY Arg1:T67 Arg2:T68	
+R28	MODIFY Arg1:T66 Arg2:T68	
+R29	MODIFY Arg1:T65 Arg2:T68	
+R30	MODIFY Arg1:T68 Arg2:E37	
+T69	Sign_symptom 1625 1634	infection
+E38	Sign_symptom:T69 
+A2	POLARITY E38 NEG
+T70	Disease_disorder 1638 1643	fever
+E39	Disease_disorder:T70 
+A3	POLARITY E39 NEG
+T71	Sign_symptom 1661 1674	LV dilatation
+E40	Sign_symptom:T71 
+T72	Sign_symptom 1704 1707	LGE
+E41	Sign_symptom:T72 
+T73	Anatomical_structure 1731 1743	inferoseptal
+T74	Anatomical_structure 1748 1756	inferior
+T75	Anatomical_structure 1757 1762	walls
+R31	MODIFY Arg1:T74 Arg2:T75	
+R32	MODIFY Arg1:T73 Arg2:T75	
+R33	MODIFY Arg1:T75 Arg2:E41	
+T76	Qualitative_concept 1792 1809	slightly elevated
+T77	Lab 1827 1837	troponin I
+E42	Lab:T77 
+T78	Lab_value 1839 1850	0.014 ng/mL
+R34	MODIFY Arg1:T78 Arg2:E42	
+R35	MODIFY Arg1:T76 Arg2:E42	
+T79	Duration 1775 1786	persistence
+E43	Duration:T79 
+T80	Diagnostic_procedure 1853 1869	Echocardiography
+E44	Diagnostic_procedure:T80 
+T81	Sign_symptom 1909 1932	coronary artery changes
+E45	Sign_symptom:T81 
+T82	Diagnostic_procedure 2069 2090	endomyocardial biopsy
+E46	Diagnostic_procedure:T82 
+T83	Sign_symptom 2374 2397	ultrastructural changes
+E47	Sign_symptom:T83 
+T84	Anatomical_structure 2435 2445	myofibrils
+T85	Anatomical_structure 2447 2454	nucleus
+T86	Anatomical_structure 2456 2469	mitochondrion
+T87	Anatomical_structure 2471 2492	endoplasmic reticulum
+T88	Anatomical_structure 2494 2518	intercellular connection
+T89	Anatomical_structure 2520 2533	blood vessels
+R36	MODIFY Arg1:T84 Arg2:E47	
+R37	MODIFY Arg1:T85 Arg2:E47	
+R38	MODIFY Arg1:T86 Arg2:E47	
+R39	MODIFY Arg1:T87 Arg2:E47	
+R40	MODIFY Arg1:T88 Arg2:E47	
+R41	MODIFY Arg1:T89 Arg2:E47	
+T90	Disease_disorder 2543 2548	virus
+E48	Disease_disorder:T90 
+A4	POLARITY E48 NEG
+T91	Diagnostic_procedure 2330 2364	Electron microscopy of EMB samples
+E49	Diagnostic_procedure:T91 
+T92	Sign_symptom 2185 2197	myocytolysis
+E50	Sign_symptom:T92 
+T93	Sign_symptom 2213 2221	fibrosis
+E51	Sign_symptom:T93 
+T94	Anatomical_structure 2202 2212	myocardial
+R42	MODIFY Arg1:T94 Arg2:E51	
+T95	Lab 2265 2268	CD3
+E52	Lab:T95 
+A5	POLARITY E52 NEG
+T96	Lab 2270 2273	CD4
+E53	Lab:T96 
+A6	POLARITY E53 NEG
+T97	Lab 2275 2293	CD8-positive cells
+E54	Lab:T97 
+A7	POLARITY E54 NEG
+T98	Lab 2295 2305	single LCA
+E55	Lab:T98 
+A8	POLARITY E55 NEG
+T99	Lab 2307 2326	CD68-positive cells
+E56	Lab:T99 
+A9	POLARITY E56 NEG
+T100	Disease_disorder 2564 2566	HF
+E57	Disease_disorder:T100 
+T101	Disease_disorder 2571 2574	CAD
+E58	Disease_disorder:T101 
+T102	Medication 2575 2584	treatment
+E59	Medication:T102 
+T103	Time 2678 2696	three months later
+E60	Time:T103 
+T104	Activity 2713 2727	rehospitalised
+E61	Activity:T104 
+T105	Disease_disorder 2739 2741	HF
+E62	Disease_disorder:T105 
+T106	Severity 2742 2754	exacerbation
+R43	MODIFY Arg1:T106 Arg2:E62	
+T107	Disease_disorder 2756 2770	NYHA Class III
+E63	Disease_disorder:T107 
+T108	Lab 2772 2781	NT-proBNP
+E64	Lab:T108 
+T109	Lab_value 2782 2792	1980 pg/dL
+T110	Lab 2794 2802	troponin
+E65	Lab:T110 
+T111	Lab_value 2803 2810	3 ng/mL
+T112	Lab 2812 2817	LVEDD
+E66	Lab:T112 
+T113	Lab_value 2818 2823	77 mm
+T114	Lab 2825 2829	LVEF
+E67	Lab:T114 
+T115	Lab_value 2830 2833	30%
+T116	Sign_symptom 2840 2865	ventricular extrasystoles
+E68	Sign_symptom:T116 
+T117	Quantitative_concept 2835 2839	8048
+T118	Sign_symptom 2874 2887	complex forms
+E69	Sign_symptom:T118 
+A10	POLARITY E69 NEG
+T119	Diagnostic_procedure 2891 2920	24-hour Holter ECG monitoring
+E70	Diagnostic_procedure:T119 
+R44	MODIFY Arg1:T109 Arg2:E64	
+R45	MODIFY Arg1:T111 Arg2:E65	
+R46	MODIFY Arg1:T113 Arg2:E66	
+R47	MODIFY Arg1:T115 Arg2:E67	
+R48	MODIFY Arg1:T117 Arg2:E68	
+T120	Diagnostic_procedure 2938 2958	coronary angiography
+E71	Diagnostic_procedure:T120 
+T121	Diagnostic_procedure 3084 3131	real-time polymerase chain reaction examination
+E72	Diagnostic_procedure:T121 
+T122	Disease_disorder 3313 3333	viral cardiomyopathy
+E73	Disease_disorder:T122 
+T123	Sign_symptom 3300 3307	HEV RNA
+E74	Sign_symptom:T123 
+T124	Medication 3394 3406	interferon-β
+E75	Medication:T124 
+T125	Dosage 3457 3474	62.5 μg (0.25 mL)
+T126	Detail_Description 3190 3231	samples collected during the previous EMB
+R49	MODIFY Arg1:T126 Arg2:E72	
+T127	Duration 3482 3492	first week
+E76	Duration:T127 
+T128	Dosage 3494 3509	125 μg (0.5 mL)
+T129	Duration 3517 3539	second and third weeks
+E77	Duration:T129 
+T130	Dosage 3545 3563	187.5 μg (0.75 mL)
+T131	Frequency 3579 3594	every other day
+E78	Frequency:T131 
+T132	Duration 3604 3636	fourth to the twenty-fourth week
+E79	Duration:T132 
+T133	Time 3640 3659	In the fourth month
+E80	Time:T133 
+T134	Diagnostic_procedure 3678 3681	EMB
+E81	Diagnostic_procedure:T134 
+T135	Sign_symptom 3703 3710	HEV RNA
+E82	Sign_symptom:T135 
+A11	POLARITY E82 NEG
+T136	Time 3753 3769	After six months
+E83	Time:T136 
+T137	Qualitative_concept 3818 3826	improved
+T138	Severity 3827 3840	significantly
+R50	MODIFY Arg1:T138 Arg2:T137	
+T139	Disease_disorder 3842 3854	NYHA class I
+E84	Disease_disorder:T139 
+T140	Lab 3856 3865	NT-proBNP
+E85	Lab:T140 
+T141	Lab_value 3866 3875	512 pg/mL
+T142	Lab 3877 3882	LVEDD
+E86	Lab:T142 
+T143	Lab_value 3883 3888	68 mm
+T144	Lab 3890 3894	LVEF
+E87	Lab:T144 
+T145	Lab_value 3895 3898	45%
+T146	Qualitative_concept 3902 3910	decrease
+T147	Sign_symptom 3928 3931	ExV
+E88	Sign_symptom:T147 
+T148	Diagnostic_procedure 3935 3949	24-hour Holter
+E89	Diagnostic_procedure:T148 
+T149	Quantitative_concept 3979 3983	1889
+T150	Sign_symptom 3984 4010	ExV, without complex forms
+E90	Sign_symptom:T150 
+R51	MODIFY Arg1:T146 Arg2:E88	
+R52	MODIFY Arg1:T149 Arg2:E90	
+T151	Activity 4016 4038	adverse drug reactions
+E91	Activity:T151 
+A12	POLARITY E91 NEG
+T152	Time 4053 4061	two-year
+E92	Time:T152 
+T153	Activity 4062 4071	follow-up
+E93	Activity:T153 
+T154	Other_entity 4076 4086	uneventful
+R53	MODIFY Arg1:T154 Arg2:E93	
+R55	MODIFY Arg1:T15 Arg2:E8	
+T157	Quantitative_concept 735 740	81 mm
+R57	MODIFY Arg1:T157 Arg2:E13	
+T155	Quantitative_concept 789 791	25
+R54	MODIFY Arg1:T155 Arg2:E14	
+T156	Quantitative_concept 1265 1275	1869 pg/mL
+R56	MODIFY Arg1:T156 Arg2:E30	
+T158	Quantitative_concept 1283 1288	73 mm
+R58	MODIFY Arg1:T158 Arg2:E31	
+T159	Quantitative_concept 1295 1298	35%
+R59	MODIFY Arg1:T159 Arg2:E32	
+T160	Quantitative_concept 1839 1850	0.014 ng/mL
+R60	MODIFY Arg1:T160 Arg2:E42	
+T161	Quantitative_concept 2782 2792	1980 pg/dL
+R61	MODIFY Arg1:T161 Arg2:E64	
+T162	Quantitative_concept 2803 2810	3 ng/mL
+R62	MODIFY Arg1:T162 Arg2:E65	
+T163	Quantitative_concept 2818 2823	77 mm
+R63	MODIFY Arg1:T163 Arg2:E66	
+T164	Quantitative_concept 3866 3875	512 pg/mL
+R64	MODIFY Arg1:T164 Arg2:E85	
+T165	Quantitative_concept 3883 3888	68 mm
+R65	MODIFY Arg1:T165 Arg2:E86	
+T166	Quantitative_concept 3895 3898	45%
+R66	MODIFY Arg1:T166 Arg2:E87	

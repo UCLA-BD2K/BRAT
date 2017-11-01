@@ -1,0 +1,190 @@
+T1	Age 2 13	23-year-old
+T2	Gender 14 19	woman
+T3	History 49 79	no remarkable previous history
+T4	History 28 40	never smoked
+T5	Sign_symptom 97 102	cough
+E1	Sign_symptom:T5 
+T6	Sign_symptom 119 123	pain
+E2	Sign_symptom:T6 
+T7	Biological_structure 107 118	right chest
+R1	MODIFY Arg1:T7 Arg2:E2	
+T8	Diagnostic_procedure 127 147	physical examination
+E3	Diagnostic_procedure:T8 
+T9	Sign_symptom 160 175	systolic murmur
+E4	Sign_symptom:T9 
+T10	Biological_structure 183 202	left sternal border
+T11	Sign_symptom 207 231	diminished breath sounds
+E5	Sign_symptom:T11 
+T12	Biological_structure 241 251	right lung
+R2	MODIFY Arg1:T12 Arg2:E5	
+R3	MODIFY Arg1:T10 Arg2:E4	
+T13	Diagnostic_procedure 261 271	radiograph
+E6	Diagnostic_procedure:T13 
+T14	Biological_structure 255 260	chest
+R4	MODIFY Arg1:T14 Arg2:E6	
+T15	Sign_symptom 306 322	pleural effusion
+E7	Sign_symptom:T15 
+T16	Detailed_description 300 305	right
+R5	MODIFY Arg1:T16 Arg2:E7	
+T17	Severity 284 296	large amount
+R6	MODIFY Arg1:T17 Arg2:E7	
+T18	Diagnostic_procedure 331 360	echocardiographic examination
+E8	Diagnostic_procedure:T18 
+T19	Sign_symptom 370 375	tumor
+E9	Sign_symptom:T19 
+T20	Biological_structure 395 417	right pulmonary artery
+T21	Biological_structure 425 440	pulmonary trunk
+R7	MODIFY Arg1:T21 Arg2:E9	
+R8	MODIFY Arg1:T20 Arg2:E9	
+T22	Diagnostic_procedure 479 523	contrast-enhanced computed tomography (CECT)
+E10	Diagnostic_procedure:T22 
+R9	MODIFY Arg1:E9 Arg2:E8	
+R10	MODIFY Arg1:E9 Arg2:E10	
+T23	Diagnostic_procedure 538 542	CECT
+E11	Diagnostic_procedure:T23 
+R11	CO-OCCURANCE Arg1:E11 Arg2:E10	
+T24	Sign_symptom 562 569	lesions
+E12	Sign_symptom:T24 
+T25	Detailed_description 552 561	scattered
+R12	MODIFY Arg1:T25 Arg2:E12	
+T26	Biological_structure 577 589	right pleura
+T27	Diagnostic_procedure 602 661	positron emission tomography (PET)-computed tomography (CT)
+E13	Diagnostic_procedure:T27 
+T28	Qualitative_concept 672 715	increased 2-deoxy-2 fluoro-D-glucose uptake
+T29	Sign_symptom 723 730	lesions
+E14	Sign_symptom:T29 
+R13	CO-OCCURANCE Arg1:E14 Arg2:E12	
+R14	MODIFY Arg1:T28 Arg2:E14	
+R15	MODIFY Arg1:T28 Arg2:E13	
+T30	Diagnostic_procedure 777 783	PET-CT
+E15	Diagnostic_procedure:T30 
+T31	Biological_structure 766 776	whole-body
+T32	Biological_structure 787 792	brain
+T33	Diagnostic_procedure 793 819	magnetic resonance imaging
+E16	Diagnostic_procedure:T33 
+R16	MODIFY Arg1:T32 Arg2:E16	
+R17	MODIFY Arg1:T31 Arg2:E15	
+T34	Sign_symptom 736 748	other tumors
+E17	Sign_symptom:T34 
+A1	POLARITY E17 NEG
+R18	MODIFY Arg1:E17 Arg2:E15	
+R19	MODIFY Arg1:E17 Arg2:E16	
+T35	Diagnostic_procedure 823 829	biopsy
+E18	Diagnostic_procedure:T35 
+T36	Sign_symptom 845 851	tumors
+E19	Sign_symptom:T36 
+R20	CO-OCCURANCE Arg1:E19 Arg2:E9	
+T37	Biological_structure 837 844	pleural
+R21	MODIFY Arg1:T37 Arg2:E19	
+T38	Area 985 996	2-mm 2 area
+T39	Qualitative_concept 865 937	proliferation of uniform short spindle cells with ovoid vesicular nuclei
+R22	MODIFY Arg1:T39 Arg2:E19	
+T40	Qualitative_concept 942 979	mitoses of up to seven mitotic bodies
+R23	MODIFY Arg1:T40 Arg2:E19	
+R24	MODIFY Arg1:T38 Arg2:T40	
+T41	Diagnostic_procedure 1002 1030	immunohistochemical analysis
+E20	Diagnostic_procedure:T41 
+T42	Biological_structure 1038 1049	tumor cells
+R25	MODIFY Arg1:T42 Arg2:E20	
+T44	Diagnostic_procedure 1085 1092	AE1/AE3
+E22	Diagnostic_procedure:T44 
+T45	Diagnostic_procedure 1095 1103	vimentin
+E23	Diagnostic_procedure:T45 
+T46	Diagnostic_procedure 1105 1109	S100
+E24	Diagnostic_procedure:T46 
+T47	Diagnostic_procedure 1111 1115	CD56
+E25	Diagnostic_procedure:T47 
+T48	Diagnostic_procedure 1117 1121	CD99
+E26	Diagnostic_procedure:T48 
+T49	Diagnostic_procedure 1126 1131	BCL-2
+E27	Diagnostic_procedure:T49 
+R26	SUB_PROCEDURE Arg1:E22 Arg2:E20	
+R27	SUB_PROCEDURE Arg1:E23 Arg2:E20	
+R28	SUB_PROCEDURE Arg1:E24 Arg2:E20	
+R29	SUB_PROCEDURE Arg1:E24 Arg2:E20	
+R30	SUB_PROCEDURE Arg1:E25 Arg2:E20	
+R31	SUB_PROCEDURE Arg1:E26 Arg2:E20	
+R32	SUB_PROCEDURE Arg1:E27 Arg2:E20	
+T50	Diagnostic_procedure 1146 1165	staining for CAM5.2
+E28	Diagnostic_procedure:T50 
+T51	Diagnostic_procedure 1167 1194	epithelial membrane antigen
+E29	Diagnostic_procedure:T51 
+T52	Diagnostic_procedure 1196 1200	CD34
+E30	Diagnostic_procedure:T52 
+T53	Diagnostic_procedure 1202 1206	CD31
+E31	Diagnostic_procedure:T53 
+T54	Diagnostic_procedure 1208 1214	desmin
+E32	Diagnostic_procedure:T54 
+T55	Diagnostic_procedure 1216 1235	smooth muscle actin
+E33	Diagnostic_procedure:T55 
+T56	Diagnostic_procedure 1237 1240	p63
+E34	Diagnostic_procedure:T56 
+T57	Diagnostic_procedure 1245 1249	CD21
+E35	Diagnostic_procedure:T57 
+T58	Qualitative_concept 1254 1262	negative
+T43	Qualitative_concept 1061 1080	positive expression
+R33	MODIFY Arg1:T43 Arg2:E22	
+R34	MODIFY Arg1:T43 Arg2:E23	
+R35	MODIFY Arg1:T43 Arg2:E24	
+R36	MODIFY Arg1:T43 Arg2:E25	
+R37	MODIFY Arg1:T43 Arg2:E26	
+R38	MODIFY Arg1:T43 Arg2:E27	
+R39	MODIFY Arg1:T58 Arg2:E35	
+R40	MODIFY Arg1:T58 Arg2:E34	
+R41	MODIFY Arg1:T58 Arg2:E33	
+R42	MODIFY Arg1:T58 Arg2:E32	
+R43	MODIFY Arg1:T58 Arg2:E31	
+R44	MODIFY Arg1:T58 Arg2:E30	
+R45	MODIFY Arg1:T58 Arg2:E29	
+R46	MODIFY Arg1:T58 Arg2:E28	
+T59	Diagnostic_procedure 1268 1287	SYT-SSX fusion gene
+E21	Diagnostic_procedure:T59 
+T60	Diagnostic_procedure 1307 1354	reverse transcription-polymerase chain reaction
+E36	Diagnostic_procedure:T60 
+R47	SUB_PROCEDURE Arg1:E21 Arg2:E36	
+T61	Diagnostic_procedure 1363 1387	pathological examination
+E37	Diagnostic_procedure:T61 
+T63	Sign_symptom 1424 1480	no malignant cells were detected in the pleural effusion
+E38	Sign_symptom:T63 
+T62	Disease_disorder 1411 1413	SS
+E39	Disease_disorder:T62 
+#1	AnnotatorNotes E39	synovial sarcoma
+R48	MODIFY Arg1:E39 Arg2:E37	
+R49	MODIFY Arg1:E38 Arg2:E37	
+T64	Therapeutic_procedure 1482 1510	Palliative radiation therapy
+E40	Therapeutic_procedure:T64 
+T65	Dosage 1512 1546	54 Gy in 27 fractions over 41 days
+R50	MODIFY Arg1:T65 Arg2:E40	
+T66	Biological_structure 1572 1583	mediastinum
+R51	MODIFY Arg1:T66 Arg2:E40	
+T67	Medication 1633 1643	Ifosfamide
+E41	Medication:T67 
+T68	Dosage 1645 1654	10 g/ m 2
+T69	Administration 1683 1702	continuous infusion
+T70	Dosage 1708 1743	five days every three to four weeks
+R52	MODIFY Arg1:T69 Arg2:E41	
+R53	MODIFY Arg1:T68 Arg2:E41	
+R54	MODIFY Arg1:T70 Arg2:E41	
+T71	Medication 1850 1862	Chemotherapy
+E42	Medication:T71 
+T72	Therapeutic_procedure 1867 1884	radiation therapy
+E43	Therapeutic_procedure:T72 
+T73	Sign_symptom 1917 1929	tumor growth
+E44	Sign_symptom:T73 
+A2	TREND E44 DEC
+T74	Sign_symptom 1938 1954	pleural effusion
+E45	Sign_symptom:T74 
+A3	TREND E45 DEC
+T75	Medication 2001 2011	ifosfamide
+E46	Medication:T75 
+T76	Duration 2029 2037	one year
+E47	Duration:T76 
+*	OVERLAP E47 E46
+T77	Severity 1980 1995	well controlled
+T78	Sign_symptom 1961 1966	tumor
+E48	Sign_symptom:T78 
+R59	MODIFY Arg1:T77 Arg2:E48	
+R55	CAUSE Arg1:E43 Arg2:E44	
+R56	CAUSE Arg1:E43 Arg2:E45	
+R57	CAUSE Arg1:E42 Arg2:E44	
+R58	CAUSE Arg1:E42 Arg2:E45	

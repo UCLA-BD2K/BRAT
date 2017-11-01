@@ -1,0 +1,10 @@
+T1	Date 113 131	25 weeks gestation
+E1	Date:T1 
+T2	Date 421 440	8 and 6 years prior
+E2	Date:T2 
+T3	Time 1189 1195	1.24 s
+E3	Time:T3 
+T4	Date 2667 2689	4th post-operative day
+E4	Date:T4 
+T5	Date 2577 2591	48 hours later
+E5	Date:T5 

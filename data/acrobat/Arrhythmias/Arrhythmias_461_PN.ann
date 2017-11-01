@@ -1,0 +1,6 @@
+T1	Date 140 144	1995
+E1	Date:T1 
+T2	Duration 239 251	for 6 months
+E2	Duration:T2 
+T3	Duration 2449 2454	3 min
+E3	Duration:T3 

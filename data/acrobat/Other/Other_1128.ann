@@ -1,0 +1,136 @@
+T1	Gender 5 9	male
+T2	Disease_disorder 80 111	intrauterine growth restriction
+E1	Disease_disorder:T2 
+T3	Activity 20 24	born
+E2	Activity:T3 
+T4	Date 28 49	38 weeks of gestation
+E3	Date:T4 
+R1	MODIFY Arg1:E3 Arg2:E2	
+T5	Sign_symptom 50 74	after a normal pregnancy
+E4	Sign_symptom:T5 
+R2	MODIFY Arg1:E4 Arg2:E2	
+R3	MODIFY Arg1:E1 Arg2:E2	
+T6	Lab 117 129	birth weight
+E5	Lab:T6 
+T7	Lab_value 134 140	2700 g
+T8	Lab 142 148	length
+E6	Lab:T8 
+T9	Lab_value 153 158	45 cm
+R4	MODIFY Arg1:T7 Arg2:E5	
+R5	MODIFY Arg1:T9 Arg2:E6	
+T10	Lab 164 182	head circumference
+E7	Lab:T10 
+T11	Lab_value 187 192	32 cm
+R6	MODIFY Arg1:T11 Arg2:E7	
+T12	Date 273 287	8 weeks of age
+E8	Date:T12 
+T13	Age 273 287	8 weeks of age
+T14	Sign_symptom 227 245	Cutaneous features
+E9	Sign_symptom:T14 
+R7	MODIFY Arg1:E8 Arg2:E9	
+T15	Sign_symptom 335 342	plaques
+E10	Sign_symptom:T15 
+T16	Detail_Description 320 334	telangiectatic
+R8	MODIFY Arg1:T16 Arg2:E10	
+T17	Detail_Description 294 315	purplered infiltrated
+R9	MODIFY Arg1:T17 Arg2:E10	
+R10	MODIFY Arg1:E8 Arg2:E10	
+T18	Frequency 348 357	sometimes
+E11	Frequency:T18 
+T19	Sign_symptom 363 370	pustula
+E12	Sign_symptom:T19 
+R11	MODIFY Arg1:E11 Arg2:E12	
+T20	Anatomical_structure 389 395	cheeks
+T21	Anatomical_structure 397 425	helix and lobule of the ears
+T22	Anatomical_structure 427 442	tip of the nose
+T23	Anatomical_structure 487 491	toes
+T24	Anatomical_structure 474 481	fingers
+T25	Anatomical_structure 467 472	hands
+T26	Detail_Description 448 459	dorsal side
+R12	MODIFY Arg1:T26 Arg2:T25	
+R13	MODIFY Arg1:T26 Arg2:T24	
+R14	MODIFY Arg1:T26 Arg2:T23	
+R15	MODIFY Arg1:E12 Arg2:T20	
+R16	MODIFY Arg1:E12 Arg2:T21	
+R17	MODIFY Arg1:E12 Arg2:T22	
+R18	MODIFY Arg1:E12 Arg2:T26	
+T27	Sign_symptom 521 543	reticulated patterning
+E13	Sign_symptom:T27 
+T28	Anatomical_structure 551 556	limbs
+R19	MODIFY Arg1:E13 Arg2:T28	
+T29	Sign_symptom 585 592	eschars
+E14	Sign_symptom:T29 
+T31	Detail_Description 579 584	large
+T32	Detail_Description 607 614	painful
+R20	MODIFY Arg1:T31 Arg2:E14	
+T33	Anatomical_structure 629 635	cheeks
+T34	Anatomical_structure 644 660	tip of the helix
+R22	MODIFY Arg1:E14 Arg2:T33	
+R23	MODIFY Arg1:E14 Arg2:T34	
+T35	Severity 692 700	worsened
+T36	Frequency 701 713	every winter
+E16	Frequency:T36 
+T30	Complication 615 621	crusts
+#1	AnnotatorNotes T30	Complication indicated by "secondary"
+R21	MODIFY Arg1:T30 Arg2:E14	
+R24	MODIFY Arg1:T32 Arg2:T30	
+T37	Activity 727 740	cold exposure
+E15	Activity:T37 
+T38	Sign_symptom 754 773	cutaneous flare-ups
+E17	Sign_symptom:T38 
+T39	Quantitative_concept 747 753	3 to 4
+R25	MODIFY Arg1:T39 Arg2:E17	
+T40	Frequency 774 782	per year
+E18	Frequency:T40 
+R26	MODIFY Arg1:E18 Arg2:E17	
+T41	Detail_Description 783 816	associated with high temperatures
+R27	MODIFY Arg1:T41 Arg2:E17	
+T42	Duration 822 855	lasted approximately 7 to 10 days
+E19	Duration:T42 
+R28	MODIFY Arg1:E19 Arg2:E17	
+T43	Lab 863 882	histologic analyses
+E20	Lab:T43 
+T44	Sign_symptom 905 912	plaques
+E21	Sign_symptom:T44 
+T45	Detail_Description 890 904	telangiectatic
+R29	MODIFY Arg1:T45 Arg2:E21	
+R30	MODIFY Arg1:E20 Arg2:E21	
+T46	Result_outcome 961 984	apoptotic keratinocytes
+T47	Detail_Description 951 960	epidermal
+T48	Detail_Description 946 950	rare
+R31	MODIFY Arg1:T47 Arg2:T46	
+R32	MODIFY Arg1:T48 Arg2:T46	
+T49	Result_outcome 1031 1042	infiltrates
+T50	Detail_Description 1018 1030	neutrophilic
+T51	Detail_Description 989 1013	perivascular lymphocytic
+R33	MODIFY Arg1:T51 Arg2:T49	
+R34	MODIFY Arg1:T50 Arg2:T49	
+T52	Detail_Description 1048 1078	nuclear dust (leukocytoclasia)
+R35	MODIFY Arg1:T52 Arg2:T49	
+T53	Anatomical_structure 1101 1107	dermis
+R36	MODIFY Arg1:T52 Arg2:T53	
+T54	Detail_Description 1108 1122	without damage
+T55	Anatomical_structure 1130 1141	vessel wall
+T56	Result_outcome 1143 1161	fibrinoid necrosis
+T57	Result_outcome 1167 1174	thrombi
+R37	MODIFY Arg1:T54 Arg2:T52	
+R38	MODIFY Arg1:T55 Arg2:T54	
+R39	MODIFY Arg1:T46 Arg2:E20	
+R40	MODIFY Arg1:T49 Arg2:E20	
+R41	MODIFY Arg1:T56 Arg2:E20	
+R42	MODIFY Arg1:T57 Arg2:E20	
+T58	Quantitative_concept 914 935	3-mm biopsy specimens
+R43	MODIFY Arg1:T58 Arg2:E20	
+T59	Diagnostic_procedure 1191 1216	direct immunofluorescence
+E22	Diagnostic_procedure:T59 
+T60	Anatomical_structure 1229 1233	skin
+T61	Detail_Description 1220 1228	lesional
+R44	MODIFY Arg1:T61 Arg2:T60	
+R45	MODIFY Arg1:T60 Arg2:E22	
+T62	Result_outcome 1239 1247	negative
+R46	MODIFY Arg1:T62 Arg2:E22	
+T63	Date 1249 1271	At the age of 3 months
+E23	Date:T63 
+T64	Sign_symptom 1297 1307	tachypneic
+E24	Sign_symptom:T64 
+R47	MODIFY Arg1:E23 Arg2:E24	

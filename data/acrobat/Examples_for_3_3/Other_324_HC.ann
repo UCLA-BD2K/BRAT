@@ -1,0 +1,178 @@
+T1	Age 2 13	65-year-old
+T2	Ethnicity 14 19	white
+T3	Gender 20 25	woman
+T4	Activity 30 38	admitted
+E1	Activity:T4 
+T5	Nonbiological_location 42 56	Padua Hospital
+T6	Sign_symptom 69 76	dyspnea
+E2	Sign_symptom:T6 
+T7	Severity 62 68	severe
+R1	MODIFY Arg1:T7 Arg2:E2	
+T8	Sign_symptom 102 107	edema
+E3	Sign_symptom:T8 
+T9	Biological_structure 98 101	leg
+R2	MODIFY Arg1:T9 Arg2:E3	
+T10	Severity 93 97	mild
+R3	MODIFY Arg1:T10 Arg2:E3	
+T11	Sign_symptom 167 174	hernias
+E4	Sign_symptom:T11 
+T12	Biological_structure 160 166	lumbar
+T13	Biological_structure 147 155	cervical
+T14	Detailed_description 139 146	painful
+R4	MODIFY Arg1:T12 Arg2:E4	
+R5	MODIFY Arg1:T13 Arg2:E4	
+R6	MODIFY Arg1:T14 Arg2:E4	
+T15	Activity 175 182	treated
+E5	Activity:T15 
+T16	Duration 187 195	10 years
+E6	Duration:T16 
+T17	Medication 201 210	ibuprofen
+E7	Medication:T17 
+T18	Dosage 211 235	600 mg three times daily
+R7	MODIFY Arg1:T18 Arg2:E7	
+R8	MODIFY Arg1:E6 Arg2:E5	
+R9	MODIFY Arg1:E7 Arg2:E5	
+T19	Date 237 256	Eight years earlier
+E8	Date:T19 
+T20	Sign_symptom 277 292	ischemic attack
+E9	Sign_symptom:T20 
+T21	Detailed_description 267 276	transient
+R10	MODIFY Arg1:T21 Arg2:E9	
+T22	Diagnostic_procedure 294 314	Clinical examination
+E10	Diagnostic_procedure:T22 
+T23	Sign_symptom 322 331	tachypnea
+E11	Sign_symptom:T23 
+T24	Sign_symptom 333 344	tachycardia
+E12	Sign_symptom:T24 
+T25	Sign_symptom 349 366	blood hypotension
+E13	Sign_symptom:T25 
+T26	Diagnostic_procedure 368 382	Blood analysis
+E14	Diagnostic_procedure:T26 
+T27	Diagnostic_procedure 402 415	D-dimer value
+E15	Diagnostic_procedure:T27 
+R11	SUB_PROCEDURE Arg1:E15 Arg2:E14	
+T28	Qualitative_concept 393 401	elevated
+R12	MODIFY Arg1:T28 Arg2:E15	
+T29	Lab_value 417 426	1231 lg/l
+T30	Sign_symptom 458 464	anemia
+E16	Sign_symptom:T30 
+T31	Severity 451 457	slight
+R13	MODIFY Arg1:T31 Arg2:E16	
+T32	Diagnostic_procedure 466 476	hemoglobin
+E17	Diagnostic_procedure:T32 
+T33	Lab_value 477 484	104 g/l
+T34	Diagnostic_procedure 497 515	iron concentration
+E18	Diagnostic_procedure:T34 
+T35	Qualitative_concept 487 496	decreased
+R14	MODIFY Arg1:T35 Arg2:E18	
+T36	Lab_value 517 527	7.4 lmol/l
+T37	Diagnostic_procedure 556 584	levels of C-reactive protein
+E19	Diagnostic_procedure:T37 
+T38	Qualitative_concept 547 555	elevated
+R15	MODIFY Arg1:T38 Arg2:E19	
+T39	Lab_value 586 595	10.2 mg/l
+R16	MODIFY Arg1:T39 Arg2:E19	
+T40	Diagnostic_procedure 598 644	Markers of inherited or acquired thrombophilia
+E20	Diagnostic_procedure:T40 
+T41	Qualitative_concept 650 658	negative
+R17	MODIFY Arg1:T41 Arg2:E20	
+A1	POLARITY E20 NEG
+T42	Diagnostic_procedure 668 692	markers of occult cancer
+E21	Diagnostic_procedure:T42 
+R18	MODIFY Arg1:T41 Arg2:E21	
+A2	POLARITY E21 NEG
+T43	Diagnostic_procedure 694 720	Spiral computed tomography
+E22	Diagnostic_procedure:T43 
+T44	Sign_symptom 738 756	pulmonary embolism
+E23	Sign_symptom:T44 
+T45	Detailed_description 728 737	bilateral
+R19	MODIFY Arg1:T45 Arg2:E23	
+T46	Biological_structure 819 842	both pulmonary arteries
+T47	Detailed_description 781 815	lobar and segmentary ramifications
+R20	MODIFY Arg1:T47 Arg2:T46	
+R21	MODIFY Arg1:T46 Arg2:E23	
+T48	Activity 851 866	hospitalization
+E24	Activity:T48 
+T49	Diagnostic_procedure 881 892	gastroscopy
+E25	Diagnostic_procedure:T49 
+T50	Diagnostic_procedure 897 908	colonoscopy
+E26	Diagnostic_procedure:T50 
+T51	Disease_disorder 923 944	hemorrhagic gastritis
+E27	Disease_disorder:T51 
+R22	MODIFY Arg1:E27 Arg2:E26	
+T52	Sign_symptom 965 971	ulcers
+E28	Sign_symptom:T52 
+T53	Biological_structure 979 984	sigma
+#1	AnnotatorNotes T53	sigmoid colon
+R23	MODIFY Arg1:T53 Arg2:E28	
+T54	Detailed_description 955 964	aspecific
+R24	MODIFY Arg1:T54 Arg2:E28	
+#2	AnnotatorNotes T28	The result of the test is elevated, not the test itself
+R25	MODIFY Arg1:E28 Arg2:E26	
+T55	Diagnostic_procedure 1003 1013	echography
+E29	Diagnostic_procedure:T55 
+T56	Biological_structure 1017 1024	abdomen
+T57	Biological_structure 1029 1035	pelvis
+T58	Qualitative_concept 1040 1046	normal
+R26	MODIFY Arg1:T56 Arg2:E29	
+R27	MODIFY Arg1:T57 Arg2:E29	
+R28	MODIFY Arg1:T58 Arg2:E29	
+T59	Diagnostic_procedure 1055 1070	ultrasonography
+E30	Diagnostic_procedure:T59 
+T60	Biological_structure 1102 1106	legs
+T61	Biological_structure 1078 1094	deep vein system
+R29	MODIFY Arg1:T61 Arg2:T60	
+R30	MODIFY Arg1:T60 Arg2:E30	
+R31	MODIFY Arg1:T58 Arg2:E30	
+T62	Diagnostic_procedure 1116 1134	magnetic resonance
+E31	Diagnostic_procedure:T62 
+T63	Biological_structure 1110 1115	spine
+R32	MODIFY Arg1:T63 Arg2:E31	
+T64	Biological_structure 1145 1153	cervical
+T65	Biological_structure 1158 1164	lumbar
+T66	Sign_symptom 1165 1179	discal hernias
+E32	Sign_symptom:T66 
+R33	MODIFY Arg1:T65 Arg2:E32	
+R34	MODIFY Arg1:T64 Arg2:E32	
+R35	MODIFY Arg1:E32 Arg2:E31	
+T67	Medication 1231 1235	LMWH
+E33	Medication:T67 
+#3	AnnotatorNotes E33	low molecular weight heparin
+T68	Dosage 1210 1227	therapeutic doses
+R36	MODIFY Arg1:T68 Arg2:E33	
+T69	Duration 1240 1246	1 week
+E34	Duration:T69 
+R37	MODIFY Arg1:E34 Arg2:E33	
+T70	Medication 1270 1281	rivaroxaban
+E35	Medication:T70 
+T71	Dosage 1260 1269	full-dose
+T72	Dosage 1283 1338	15 mg twice daily for 2 weeks and then 20 mg once daily
+R38	MODIFY Arg1:T72 Arg2:E35	
+R39	MODIFY Arg1:T71 Arg2:E35	
+T73	Medication 1341 1350	Ibuprofen
+E36	Medication:T73 
+T74	Medication 1384 1392	tramadol
+E37	Medication:T74 
+T75	Medication 1414 1426	pantoprazole
+E38	Medication:T75 
+A3	POLARITY E36 NEG
+*	OVERLAP E2 E3 E1
+R40	AFTER Arg1:E3 Arg2:E4	
+*	OVERLAP E4 E5
+R41	MODIFY Arg1:E8 Arg2:E9	
+R42	BEFORE Arg1:E5 Arg2:E9	
+R43	MODIFY Arg1:E11 Arg2:E10	
+R44	MODIFY Arg1:E12 Arg2:E10	
+R45	MODIFY Arg1:E13 Arg2:E10	
+R46	MODIFY Arg1:E23 Arg2:E22	
+R47	MODIFY Arg1:T5 Arg2:E1	
+R48	BEFORE Arg1:E9 Arg2:E10	
+*	OVERLAP E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 E22 E23
+R49	MODIFY Arg1:T36 Arg2:E18	
+R50	MODIFY Arg1:T33 Arg2:E17	
+R51	MODIFY Arg1:T29 Arg2:E15	
+R52	BEFORE Arg1:E23 Arg2:E24	
+*	OVERLAP E24 E25 E26 E27 E28 E29 E30 E31 E32
+R53	BEFORE Arg1:E32 Arg2:E33	
+R54	BEFORE Arg1:E33 Arg2:E35	
+*	OVERLAP E35 E36 E37 E38

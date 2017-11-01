@@ -1,0 +1,54 @@
+T1	History 55 88	remote history of a gunshot wound
+T2	Age 32 43	34-year-old
+T3	Gender 44 47	man
+T4	Anatomical_structure 96 107	right groin
+R1	MODIFY Arg1:T4 Arg2:T1	
+T5	Activity 112 121	presented
+E1	Activity:T5 
+T6	Location 129 137	hospital
+T7	Anatomical_structure 143 156	right buttock
+T8	Anatomical_structure 161 164	leg
+T9	Sign_symptom 165 169	pain
+E2	Sign_symptom:T9 
+R2	MODIFY Arg1:T8 Arg2:E2	
+R3	MODIFY Arg1:T7 Arg2:E2	
+T10	Diagnostic_procedure 180 190	radiograph
+E3	Diagnostic_procedure:T10 
+T11	Anatomical_structure 173 179	pelvic
+R4	MODIFY Arg1:T11 Arg2:E3	
+T12	Result_outcome 198 220	numerous dense objects
+T13	Anatomical_structure 221 233	on the right
+R5	MODIFY Arg1:T13 Arg2:T12	
+R6	MODIFY Arg1:T12 Arg2:E3	
+T14	Sign_symptom 273 279	lesion
+E4	Sign_symptom:T14 
+R7	MODIFY Arg1:E4 Arg2:E3	
+T15	Detail_Description 258 272	ring-calcified
+T16	Detail_Description 252 257	faint
+R8	MODIFY Arg1:T15 Arg2:E4	
+R9	MODIFY Arg1:T16 Arg2:E4	
+T17	Diagnostic_procedure 293 303	radiograph
+E5	Diagnostic_procedure:T17 
+T18	Anatomical_structure 286 292	pelvic
+R10	MODIFY Arg1:T18 Arg2:E5	
+T19	Result_outcome 346 352	normal
+R11	MODIFY Arg1:T19 Arg2:E5	
+T20	Result_outcome 380 409	presence of gunshot fragments
+R12	MODIFY Arg1:T20 Arg2:E5	
+T21	Sign_symptom 434 438	pain
+E6	Sign_symptom:T21 
+A1	TREND E6 STAY
+T22	Diagnostic_procedure 455 479	computed tomography (CT)
+E7	Diagnostic_procedure:T22 
+T23	Result_outcome 513 556	possibility of intra-articular loose bodies
+R13	MODIFY Arg1:T23 Arg2:E7	
+#1	AnnotatorNotes T23	Not sure about this label
+T24	Sign_symptom 595 609	pseudoaneurysm
+E8	Sign_symptom:T24 
+T25	Detail_Description 580 594	post-traumatic
+R14	MODIFY Arg1:T25 Arg2:E8	
+T26	Diagnostic_procedure 626 628	CT
+E9	Diagnostic_procedure:T26 
+R15	MODIFY Arg1:E8 Arg2:E9	
+T27	Therapeutic_procedure 635 654	endovascular repair
+E10	Therapeutic_procedure:T27 

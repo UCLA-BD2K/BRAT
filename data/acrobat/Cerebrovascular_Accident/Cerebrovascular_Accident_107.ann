@@ -1,0 +1,9 @@
+T1	Medication 494 506	penicillin V
+E1	Medication:T1 
+T2	Medication 508 518	folic acid
+E2	Medication:T2 
+T3	Medication 524 540	zinc supplements
+E3	Medication:T3 
+T4	Activity 82 91	admission
+E4	Activity:T4 
+T5	Nonbiological_location 584 592	hospital

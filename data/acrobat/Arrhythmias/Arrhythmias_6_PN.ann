@@ -1,0 +1,20 @@
+T1	Date 150 174	22 weeks gestational age
+E1	Date:T1 
+T2	Duration 3518 3530	18 –24 weeks
+E2	Duration:T2 
+T3	Date 3567 3582	before 30 weeks
+E3	Date:T3 
+T4	Date 5925 5931	1 year
+E4	Date:T4 
+T5	Date 8765 8783	23 weeks gestation
+E5	Date:T5 
+T6	Date 8952 8960	26 weeks
+E6	Date:T6 
+T7	Date 9127 9145	31 weeks gestation
+E7	Date:T7 
+T8	Duration 9188 9193	2-day
+E8	Duration:T8 
+T9	Date 9346 9349	2 h
+E9	Date:T9 
+T10	Date 10071 10082	age 52 days
+E10	Date:T10 

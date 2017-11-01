@@ -1,0 +1,5 @@
+T1	Age 2 14	55 years old
+T2	Sign_symptom 37 44	dyspnea
+E1	Sign_symptom:T2 
+T3	Detailed_description 45 54	FC II–III
+R1	MODIFY Arg1:T3 Arg2:E1	

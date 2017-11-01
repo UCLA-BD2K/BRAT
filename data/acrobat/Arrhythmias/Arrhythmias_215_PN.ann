@@ -1,0 +1,16 @@
+T1	Date 36 41	24 yo
+E1	Date:T1 
+T2	Date 558 563	age 9
+E2	Date:T2 
+T3	Date 568 572	10 y
+E3	Date:T3 
+T4	Date 593 601	age 15 y
+E4	Date:T4 
+T5	Date 1037 1044	age 23y
+E5	Date:T5 
+T6	Date 1381 1386	day 3
+E6	Date:T6 
+T7	Date 2499 2502	25y
+E7	Date:T7 
+T8	Date 2504 2511	11/2013
+E8	Date:T8 

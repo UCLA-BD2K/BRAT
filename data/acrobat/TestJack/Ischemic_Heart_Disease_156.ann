@@ -1,0 +1,12 @@
+T1	Lab_value_phrase 922 984	Troponin levels were elevated at 14 ng/mL (normal <0.1 ng/mL).
+T2	Lab_value 955 963	14 ng/mL
+T3	Lab 922 937	Troponin levels
+T4	Lab_value_phrase 2231 2346	Alteplase (0.2 mg) was administered 3 times directly into the LMCA but no improvement was noted in the obstruction.
+T5	Lab_value 2242 2248	0.2 mg
+T6	Lab 2231 2240	Alteplase
+T7	Lab_value_phrase 2862 2900	abciximab 0.25 mg/kg intravenous bolus
+T8	Lab_value 2872 2882	0.25 mg/kg
+T9	Lab 2883 2900	intravenous bolus
+T10	Lab_value_phrase 2902 3035	followed by 0.125 µg/kg/h intravenous drip was administered for 12 hours to decrease the amount of thrombus burden in the coronaries.
+T11	Lab_value 2914 2927	0.125 µg/kg/h
+T12	Lab 2928 2939	intravenous

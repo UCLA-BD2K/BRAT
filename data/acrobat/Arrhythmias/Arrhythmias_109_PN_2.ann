@@ -1,0 +1,12 @@
+T1	Time 242 261	for several minutes
+E1	Time:T1 
+T2	Time 1071 1079	24 hours
+E2	Time:T2 
+T3	Time 556 574	within three hours
+E3	Time:T3 
+T4	Time 1337 1361	within the next 48 hours
+E4	Time:T4 
+T5	Time 1204 1217	8 hours after
+E5	Time:T5 
+T6	Time 1633 1649	Five hours after
+E6	Time:T6 

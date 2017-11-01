@@ -1,0 +1,12 @@
+T1	Duration 108 135	prior to the age of 5 years
+E1	Duration:T1 
+T2	Date 204 217	8 years prior
+E2	Date:T2 
+T3	Time 779 786	6–8 min
+E3	Time:T3 
+T4	Time 791 797	31 min
+E4	Time:T4 
+T5	Time 1918 1952	After approximately 2 h and 45 min
+E5	Time:T5 
+T6	Time 2169 2174	5.5 h
+E6	Time:T6 

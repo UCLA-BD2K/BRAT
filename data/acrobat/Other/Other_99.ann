@@ -1,0 +1,54 @@
+T1	Age 2 7	young
+T2	Sign_symptom 37 45	dyspnoea
+E1	Sign_symptom:T2 
+T3	Detail_Description 31 36	acute
+R1	MODIFY Arg1:T3 Arg2:E1	
+T4	Activity 47 56	Anamnesis
+E2	Activity:T4 
+#1	AnnotatorNotes E2	Literally a discussion of medical history
+T5	Date 132 146	4 years before
+E3	Date:T5 
+T6	Diagnostic_procedure 112 131	jugular cannulation
+E4	Diagnostic_procedure:T6 
+T7	Complication 70 102	loss of metallic guide wire (GW)
+R2	MODIFY Arg1:T7 Arg2:E4	
+R3	MODIFY Arg1:E2 Arg2:E4	
+R4	MODIFY Arg1:E3 Arg2:E4	
+T8	Sign_symptom 170 188	pulmonary embolism
+E5	Sign_symptom:T8 
+T9	Detail_Description 160 169	bilateral
+T10	Detail_Description 148 159	Consecutive
+R5	MODIFY Arg1:T9 Arg2:E5	
+R6	MODIFY Arg1:T10 Arg2:E5	
+T11	Diagnostic_procedure 211 228	thoracic angio-CT
+E6	Diagnostic_procedure:T11 
+T12	Diagnostic_procedure 282 296	CT angiography
+E7	Diagnostic_procedure:T12 
+T13	Result_outcome 244 267	Sagittal reconstruction
+R7	MODIFY Arg1:T13 Arg2:E7	
+T14	Result_outcome 234 267	confirmed Sagittal reconstruction
+R8	MODIFY Arg1:T14 Arg2:E6	
+T15	Result_outcome 297 324	showing metallic guide wire
+T16	Anatomical_structure 330 348	superior vena cava
+T17	Anatomical_structure 352 377	right external iliac vena
+R9	MODIFY Arg1:T16 Arg2:T15	
+R10	MODIFY Arg1:T17 Arg2:T15	
+R11	MODIFY Arg1:T15 Arg2:E7	
+T18	Other_entity 379 596	Transparietal cardiac echography showing the extremity of the guide wire (white arrow) and above, attached mobile thrombi in the right atrium. presence of GW in the vena cava and in the right atrium (figures 1 and 2).
+#2	AnnotatorNotes T18	Figure legend
+T19	Medication 597 607	Tinzaparin
+E8	Medication:T19 
+T20	Date 621 636	Two weeks later
+E9	Date:T20 
+T21	Therapeutic_procedure 650 659	veinotomy
+E10	Therapeutic_procedure:T21 
+T22	Anatomical_structure 638 649	right iliac
+R12	MODIFY Arg1:T22 Arg2:E10	
+T23	Result_outcome 676 693	extracting the GW
+R13	MODIFY Arg1:T23 Arg2:E10	
+T24	Detail_Description 694 740	after two unsuccessful transcutaneous attempts
+R14	MODIFY Arg1:T24 Arg2:E10	
+T25	Sign_symptom 812 823	tachycardia
+E11	Sign_symptom:T25 
+T26	Detail_Description 795 811	supraventricular
+R15	MODIFY Arg1:T26 Arg2:E11	

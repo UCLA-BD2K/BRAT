@@ -1,0 +1,6 @@
+T1	Date 666 681	One month after
+E1	Date:T1 
+T2	Date 826 840	After 3 months
+E2	Date:T2 
+T3	Date 810 824	one week later
+E3	Date:T3 

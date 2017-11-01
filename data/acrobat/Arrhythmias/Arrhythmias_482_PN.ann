@@ -1,0 +1,10 @@
+T1	Duration 94 104	1.5 months
+E1	Duration:T1 
+T2	Date 394 406	after 2 days
+E2	Date:T2 
+T3	Date 1110 1127	6-month follow-up
+E3	Date:T3 
+T4	Duration 1282 1290	6 months
+E4	Duration:T4 
+T5	Duration 1447 1468	Within 6 months after
+E5	Duration:T5 

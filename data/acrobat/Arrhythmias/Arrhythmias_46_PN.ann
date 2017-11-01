@@ -1,0 +1,16 @@
+T1	Time 72 75	2 h
+E1	Time:T1 
+T2	Duration 506 512	20-min
+E2	Duration:T2 
+T3	Duration 2074 2078	72 h
+E3	Duration:T3 
+T4	Date 2233 2246	after 15 days
+E4	Date:T4 
+T5	Frequency 1134 1156	three times every 12 h
+E5	Frequency:T5 
+T6	Duration 1591 1603	over one day
+E6	Duration:T6 
+T7	Duration 595 599	28 s
+E7	Duration:T7 
+T8	Duration 667 671	60 s
+E8	Duration:T8 

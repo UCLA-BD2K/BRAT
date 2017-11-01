@@ -1,0 +1,14 @@
+T1	Date 277 292	three years old
+E1	Date:T1 
+T2	Date 443 446	40s
+E2	Date:T2 
+T3	Date 605 620	43 years of age
+E3	Date:T3 
+T4	Date 660 668	45 years
+E4	Date:T4 
+T5	Date 757 766	age of 57
+E5	Date:T5 
+T6	Date 21 32	65 year-old
+E6	Date:T6 
+T7	Date 534 550	two years before
+E7	Date:T7 

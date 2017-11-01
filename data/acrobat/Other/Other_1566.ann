@@ -1,0 +1,125 @@
+T1	Age 18 29	71-year-old
+T2	Gender 30 35	woman
+T3	Activity 44 52	admitted
+E1	Activity:T3 
+T4	Sign_symptom 65 71	oedema
+E2	Sign_symptom:T4 
+T5	Severity 60 64	mild
+T6	Anatomical_structure 79 85	eyelid
+T7	Anatomical_structure 90 117	bilateral lower extremities
+T8	Lab 143 153	urinalysis
+E3	Lab:T8 
+T9	Lab_value 134 142	abnormal
+R1	MODIFY Arg1:T9 Arg2:E3	
+T10	Duration 167 174	1 month
+E4	Duration:T10 
+T11	Date 229 255	1 month prior to admission
+E5	Date:T11 
+T12	Sign_symptom 187 201	blurred vision
+E6	Sign_symptom:T12 
+T13	Sign_symptom 206 215	headaches
+E7	Sign_symptom:T13 
+T14	Detail_Description 176 186	Occasional
+R2	MODIFY Arg1:T14 Arg2:E6	
+R3	MODIFY Arg1:T14 Arg2:E7	
+R4	MODIFY Arg1:T5 Arg2:E2	
+R5	MODIFY Arg1:T6 Arg2:E2	
+R6	MODIFY Arg1:T7 Arg2:E2	
+T15	Disease_disorder 283 297	hypothyroidism
+E8	Disease_disorder:T15 
+T16	Date 298 311	6 years prior
+E9	Date:T16 
+T17	Medication 327 347	levothyroxine sodium
+E10	Medication:T17 
+T18	Administration 322 326	oral
+R7	MODIFY Arg1:T18 Arg2:E10	
+T19	Sign_symptom 387 399	hypertension
+E11	Sign_symptom:T19 
+T20	Disease_disorder 403 420	diabetes mellitus
+E12	Disease_disorder:T20 
+T21	History 373 420	no history of hypertension or diabetes mellitus
+A1	POLARITY E11 NEG
+A2	POLARITY E12 NEG
+T22	Lab 458 472	blood pressure
+E13	Lab:T22 
+T23	Lab_value 476 487	140/90 mmHg
+R8	MODIFY Arg1:T23 Arg2:E13	
+T24	Lab 494 515	body mass index (BMI)
+E14	Lab:T24 
+T25	Lab_value 519 530	28.4 kg/m 2
+R9	MODIFY Arg1:T25 Arg2:E14	
+T26	Sign_symptom 546 572	pathological heart murmurs
+E15	Sign_symptom:T26 
+A3	POLARITY E15 NEG
+T27	Sign_symptom 580 598	dry or moist rales
+E16	Sign_symptom:T27 
+A4	POLARITY E16 NEG
+T28	Anatomical_structure 604 611	eyelids
+T29	Anatomical_structure 616 633	lower extremities
+T30	Sign_symptom 652 658	oedema
+E17	Sign_symptom:T30 
+T31	Severity 647 651	mild
+R10	MODIFY Arg1:T31 Arg2:E17	
+R11	MODIFY Arg1:T29 Arg2:E17	
+R12	MODIFY Arg1:T28 Arg2:E17	
+T32	Lab 688 705	haemoglobin level
+E18	Lab:T32 
+T33	Lab_value 709 717	109 g/ L
+T34	Lab 726 757	white blood cells and platelets
+E19	Lab:T34 
+T35	Lab_value 719 725	normal
+R13	MODIFY Arg1:T35 Arg2:E19	
+T36	Lab 759 766	albumin
+E20	Lab:T36 
+T37	Lab_value 770 778	36.3 g/L
+R14	MODIFY Arg1:T37 Arg2:E20	
+T38	Lab 780 793	total protein
+E21	Lab:T38 
+T39	Lab_value 797 805	94.9 g/L
+T40	Lab 807 823	serum creatinine
+E22	Lab:T40 
+T41	Lab_value 827 837	0.9 mg/ dL
+R15	MODIFY Arg1:T41 Arg2:E22	
+T42	Lab 839 852	blood calcium
+E23	Lab:T42 
+T43	Lab_value 856 867	2.29 mmol/L
+R16	MODIFY Arg1:T43 Arg2:E23	
+T44	Lab 869 878	blood IgG
+E24	Lab:T44 
+T45	Lab_value 882 913	3,220.0 mg/dL (700-1,600 mg/dL)
+R17	MODIFY Arg1:T45 Arg2:E24	
+T46	Lab 915 931	κ Ig light chain
+E25	Lab:T46 
+T47	Lab_value 935 965	1,050.0 mg/ dL (170-370 mg/dL)
+R18	MODIFY Arg1:T47 Arg2:E25	
+T48	Lab 967 983	λ Ig light chain
+E26	Lab:T48 
+T49	Lab_value 987 1011	59.0 mg/dL (90210 mg/dL)
+R19	MODIFY Arg1:T49 Arg2:E26	
+T50	Lab 1013 1035	urine specific gravity
+E27	Lab:T50 
+T51	Lab_value 1039 1044	1.010
+R20	MODIFY Arg1:T51 Arg2:E27	
+T52	Lab 1046 1066	urinary microalbumin
+E28	Lab:T52 
+T53	Lab_value 1070 1092	63.6 mg/dL (0-3 mg/dL)
+R21	MODIFY Arg1:T53 Arg2:E28	
+#1	AnnotatorNotes T45	Normal range in parens
+T54	Lab 1094 1118	urinary β2 microglobulin
+E29	Lab:T54 
+T55	Lab_value 1122 1147	0.02 mg/dL (0-0.02 mg/dL)
+R22	MODIFY Arg1:T55 Arg2:E29	
+T56	Lab 1149 1158	urine IgG
+E30	Lab:T56 
+T57	Lab_value 1162 1186	20.7 mg/dL (00.96 mg/dL)
+R23	MODIFY Arg1:T57 Arg2:E30	
+T58	Lab 1188 1210	urine κ Ig light chain
+E31	Lab:T58 
+T59	Lab_value 1214 1239	20.9 mg/dL (0-0.79 mg/dL)
+R24	MODIFY Arg1:T59 Arg2:E31	
+T60	Lab 1245 1267	urine λ Ig light chain
+E32	Lab:T60 
+T61	Lab_value 1271 1297	0.492 mg/dL (0-0.43 mg/dL)
+R25	MODIFY Arg1:T61 Arg2:E32	
+T62	Other_entity 1299 1328	Her urinary protein level was
+#2	AnnotatorNotes T62	Document truncated

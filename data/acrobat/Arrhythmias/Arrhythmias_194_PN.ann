@@ -1,0 +1,16 @@
+T1	Date 277 290	December 2013
+E1	Date:T1 
+T2	Date 100 104	2001
+E2	Date:T2 
+T3	Time 2084 2103	several hours after
+E3	Time:T3 
+T4	Date 2244 2252	next day
+E4	Date:T4 
+T5	Duration 3764 3773	8 minutes
+E5	Duration:T5 
+T6	Duration 3801 3811	11 minutes
+E6	Duration:T6 
+T7	Duration 3898 3916	2 hours 20 minutes
+E7	Duration:T7 
+T8	Duration 4169 4177	6 months
+E8	Duration:T8 

@@ -1,0 +1,5 @@
+T1	Time 0 243	Arrhythmias_109_PN
+A ten-year-old female with no significant medical history was admitted to the emergency department after syncope while exercising. She felt nauseated while running at gymnastics class, then collapsed, and was unconscious for
+E1	Time:T1 
+T2	Time 554 572	within three hours
+E2	Time:T2 

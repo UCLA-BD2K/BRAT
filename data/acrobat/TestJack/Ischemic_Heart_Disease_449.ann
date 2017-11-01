@@ -1,0 +1,6 @@
+T1	Lab_value_phrase 350 421	His lipid panel results were notable for total cholesterol of 127 mg/dL
+T2	Lab_value 412 421	127 mg/dL
+T3	Lab 397 408	cholesterol
+T4	Lab_value_phrase 426 509	low-density lipoprotein cholesterol of 67 mg/dL (to convert to millimoles per liter
+T5	Lab_value 465 473	67 mg/dL
+T6	Lab 426 461	low-density lipoprotein cholesterol
